@@ -5087,7 +5087,7 @@
           ]
         },
         {
-          "description": "command + g = System Preference",
+          "description": "command + g = System Preferences",
           "type": "basic",
           "from": {
             "key_code": "g",
