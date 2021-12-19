@@ -4497,7 +4497,7 @@
           ]
         },
         {
-          "description": "q = close app",
+          "description": "q = backspace",
           "type": "basic",
           "from": {
             "key_code": "q",
@@ -4512,10 +4512,8 @@
           },
           "to": [
             {
-              "key_code": "q",
-              "modifiers": [
-                "left_command"
-              ]
+              "key_code": "delete_or_backspace",
+              "modifiers": []
             }
           ]
         },
@@ -4671,6 +4669,27 @@
               "modifiers": [
                 "left_control"
               ]
+            }
+          ]
+        },
+        {
+          "description": "a = delete forward",
+          "type": "basic",
+          "from": {
+            "key_code": "a",
+            "modifiers": {
+              "mandatory": [
+                "right_command",
+                "right_control",
+                "right_shift",
+                "right_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "delete_forward",
+              "modifiers": []
             }
           ]
         },

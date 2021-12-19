@@ -1168,10 +1168,10 @@ rules:
         to: [ { key_code: q , modifiers: [ left_command ] } ]
         # to: [ { key_code: escape , modifiers: [ left_command,left_option ] } ]  # TODO: May not work
 
-      - description: 'q = close app'
+      - description: 'q = backspace'
         type: basic
         from: { key_code: q, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: q , modifiers: [ left_command ] } ]
+        to: [ { key_code: delete_or_backspace , modifiers: [ ] } ]
 
 
       #==========================================================#
@@ -1218,7 +1218,10 @@ rules:
         to: [ { key_code: up_arrow , modifiers: [ left_control ] } ]
 
       # - description: 'a = window resize meta key' (passing via ⇧⌃⌥⌘A)
-
+      - description: 'a = delete forward'
+        type: basic
+        from: { key_code: a, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
+        to: [ { key_code: delete_forward , modifiers: [ ] } ]
 
       #==========================================================#
       # ( s ) --> switch tab/win                                 #

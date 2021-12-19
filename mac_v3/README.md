@@ -141,7 +141,7 @@ Hold  **<kbd>✱</kbd> Hyper** to enable hyper functionalities. We will assume a
 | Key\Mod |      <kbd>✱</kbd>      |       <kbd>⌘</kbd>       |       <kbd>⌥</kbd>        |       <kbd>⌃</kbd>       |     <kbd>⇧</kbd>      |
 | :-----: | :---------: | :-----------: | :------------: | :-----------: | :--------: |
 |    <kbd>⇥</kbd>    |  next app   |   prev app    | switch desktop |               | switch tab |
-|    <kbd>Q</kbd>    |  backspace  |   close app   |                |  Lock Screen  |   Logout   |
+|    <kbd>Q</kbd>    |  backspace  |   delete forward   |                |  Lock Screen  |   Logout   |
 |    <kbd>W</kbd>    |  close tab  | close all win |                | Display Sleep |   Sleep    |
 |    <kbd>A</kbd>    | **win app** |  expose all   |  show desktop  |   LaunchPad   |            |
 |    <kbd>S</kbd>    |  next tab   |   prev tab    |    next win    |   prev win    |            |
