@@ -4798,7 +4798,7 @@
           ]
         },
         {
-          "description": "option + e = mail",
+          "description": "option + e = Safari",
           "type": "basic",
           "from": {
             "key_code": "e",
@@ -4814,7 +4814,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a mail"
+              "shell_command": "open -a Safari"
             }
           ]
         },

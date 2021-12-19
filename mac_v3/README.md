@@ -157,7 +157,7 @@ Hold  **<kbd>✱</kbd> Hyper** to enable hyper functionalities. We will assume a
 
 | Key\Mod |         <kbd>✱</kbd>          |     <kbd>⌘</kbd>     |      <kbd>⌥</kbd>      |
 | :-----: | :----------------: | :-------: | :---------: |
-|    <kbd>E</kbd>    |       Safari       |  Finder   |    Mail     |
+|    <kbd>E</kbd>    |       Chrome       |  Finder   |    Safari     |
 |    <kbd>R</kbd>    |       iTerm2       |  Preview  |  Terminal   |
 |    <kbd>T</kbd>    | Visual Studio Code |  Typora   |    Note     |
 |    <kbd>Y</kbd>    |        Siri        | Karabiner | Amphetamine |
