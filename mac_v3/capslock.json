@@ -4777,7 +4777,7 @@
       "description": "Hyper Application",
       "manipulators": [
         {
-          "description": "command + e = finder",
+          "description": "command + e = System Preferences",
           "type": "basic",
           "from": {
             "key_code": "e",
@@ -4793,7 +4793,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a finder"
+              "shell_command": "open \"x-apple.systempreferences:com.apple.preference\""
             }
           ]
         },
@@ -4819,7 +4819,7 @@
           ]
         },
         {
-          "description": "e = Chrome",
+          "description": "e = Finder",
           "type": "basic",
           "from": {
             "key_code": "e",
@@ -4834,7 +4834,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'Google Chrome'"
+              "shell_command": "open -a finder"
             }
           ]
         },
