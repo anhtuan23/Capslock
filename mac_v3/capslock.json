@@ -5005,7 +5005,7 @@
           ]
         },
         {
-          "description": "y = Siri",
+          "description": "y = Feedly",
           "type": "basic",
           "from": {
             "key_code": "y",
@@ -5020,7 +5020,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a Siri"
+              "shell_command": "open -a 'Google Chrome' https://feedly.com/"
             }
           ]
         },
