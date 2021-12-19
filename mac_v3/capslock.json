@@ -4963,7 +4963,7 @@
           ]
         },
         {
-          "description": "command + y = karabiner",
+          "description": "command + y = Notion ReadDict",
           "type": "basic",
           "from": {
             "key_code": "y",
@@ -4979,12 +4979,12 @@
           },
           "to": [
             {
-              "shell_command": "open -a Karabiner-Elements"
+              "shell_command": "open -a 'Google Chrome' https://www.notion.so/fa08e3f8d6c349c4897af496a5058316?v=14fe289b0f3d41a5b6e0c06391880307"
             }
           ]
         },
         {
-          "description": "option + y = amphetamine",
+          "description": "option + y = Twitter",
           "type": "basic",
           "from": {
             "key_code": "y",
@@ -5000,7 +5000,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a amphetamine"
+              "shell_command": "open -a 'Google Chrome' https://twitter.com/home"
             }
           ]
         },
