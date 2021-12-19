@@ -162,7 +162,7 @@ Hold  **<kbd>✱</kbd> Hyper** to enable hyper functionalities. We will assume a
 |    <kbd>T</kbd>    | Visual Studio Code |  Typora   |    Note     |
 |    <kbd>Y</kbd>    |        Siri        | Karabiner | Amphetamine |
 |    <kbd>F</kbd>    |      Chrome      |   YouTube Subs    | YouTube WL  |
-|    <kbd>G</kbd>    |   Alfred 4    |  Chrome   |  Calender   |
+|    <kbd>G</kbd>    |   Alfred 4    |  System Preferences   |  Safari   |
 
 
 
