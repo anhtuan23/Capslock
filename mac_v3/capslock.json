@@ -4839,7 +4839,7 @@
           ]
         },
         {
-          "description": "command + r = Visual Studio Code",
+          "description": "command + r = Finder project",
           "type": "basic",
           "from": {
             "key_code": "r",
@@ -4855,7 +4855,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'Visual Studio Code'"
+              "shell_command": "open $HOME/projects"
             }
           ]
         },
@@ -4901,7 +4901,7 @@
           ]
         },
         {
-          "description": "command + t = typora",
+          "description": "command + t = Screen Time",
           "type": "basic",
           "from": {
             "key_code": "t",
@@ -4917,12 +4917,12 @@
           },
           "to": [
             {
-              "shell_command": "open -a Typora"
+              "shell_command": "open /System/Library/PreferencePanes/ScreenTime.prefPane"
             }
           ]
         },
         {
-          "description": "option + t = notes",
+          "description": "option + t = Storage Management",
           "type": "basic",
           "from": {
             "key_code": "t",
@@ -4938,7 +4938,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a notes"
+              "shell_command": "open -a 'Storage management'"
             }
           ]
         },

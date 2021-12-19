@@ -158,8 +158,8 @@ Hold  **<kbd>✱</kbd> Hyper** to enable hyper functionalities. We will assume a
 | Key\Mod |         <kbd>✱</kbd>          |     <kbd>⌘</kbd>     |      <kbd>⌥</kbd>      |
 | :-----: | :----------------: | :-------: | :---------: |
 |    <kbd>E</kbd>    |       Finder       |  Finder Downloads   |    Finder Home     |
-|    <kbd>R</kbd>    |       iTerm2       |  Visual Studio Code  |  Terminal   |
-|    <kbd>T</kbd>    | Visual Studio Code |  Typora   |    Note     |
+|    <kbd>R</kbd>    |       iTerm2       |  Finder projects  |  Terminal   |
+|    <kbd>T</kbd>    | Visual Studio Code |  Screen Time   |    Storage Management     |
 |    <kbd>Y</kbd>    |        Siri        | Karabiner | Amphetamine |
 |    <kbd>F</kbd>    |      Chrome      |   YouTube Subs    | YouTube WL  |
 |    <kbd>G</kbd>    |   Alfred 4    |  System Preferences   |  Safari   |
