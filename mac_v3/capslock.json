@@ -5103,7 +5103,7 @@
           },
           "to": [
             {
-              "shell_command": "open 'x-apple.systempreferences:com.apple.preference'"
+              "shell_command": "open \"x-apple.systempreferences:com.apple.preference\""
             }
           ]
         },
