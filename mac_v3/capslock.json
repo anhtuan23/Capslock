@@ -4512,10 +4512,8 @@
           },
           "to": [
             {
-              "key_code": "q",
-              "modifiers": [
-                "left_command"
-              ]
+              "key_code": "backspace",
+              "modifiers": []
             }
           ]
         },
