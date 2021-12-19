@@ -157,8 +157,8 @@ Hold  **<kbd>✱</kbd> Hyper** to enable hyper functionalities. We will assume a
 
 | Key\Mod |         <kbd>✱</kbd>          |     <kbd>⌘</kbd>     |      <kbd>⌥</kbd>      |
 | :-----: | :----------------: | :-------: | :---------: |
-|    <kbd>E</kbd>    |       Finder       |  Preferences   |    Safari     |
-|    <kbd>R</kbd>    |       iTerm2       |  Preview  |  Terminal   |
+|    <kbd>E</kbd>    |       Finder       |  System Preferences   |    Safari     |
+|    <kbd>R</kbd>    |       iTerm2       |  Visual Studio Code  |  Terminal   |
 |    <kbd>T</kbd>    | Visual Studio Code |  Typora   |    Note     |
 |    <kbd>Y</kbd>    |        Siri        | Karabiner | Amphetamine |
 |    <kbd>F</kbd>    |      Chrome      |   YouTube Subs    | YouTube WL  |
