@@ -172,14 +172,14 @@ Hold  **<kbd>✱</kbd> Hyper** to enable hyper functionalities. We will assume a
 
 <kbd>D</kbd>, <kbd>Z</kbd>, <kbd>X</kbd>, <kbd>C</kbd>, <kbd>V</kbd>, <kbd>B</kbd> are used as terminal control keys. Sending singals and IDE commands. (green area)
 
-| Key\Mod |                         <kbd>✱</kbd>                          |          <kbd>⌘</kbd>           |
+| Key\Mod |                         <kbd>?</kbd>                          |          <kbd>?</kbd>           |
 | :-----: | :------------------------------------------------: | :------------------: |
-|    <kbd>D</kbd>    |               <kbd>⌃</kbd><kbd>D</kbd> Cmd+Delete_or_Backspace               | Define (Force touch) |
-|    <kbd>Z</kbd>    |               <kbd>⌃</kbd><kbd>Z</kbd> Ctrl+Z  (SIGTSTP)               |  <kbd>F5</kbd> (VS Code Debug)  |
-|    <kbd>X</kbd>    |               <kbd>⌃</kbd><kbd>R</kbd> Ctrl+R (IDE Run)                |  <kbd>⌃</kbd><kbd>F5</kbd> (VS Code Run)   |
-|    <kbd>C</kbd>    |                <kbd>⌃</kbd><kbd>C</kbd>  Ctrl+C (SIGINT)                 | <kbd>⇧</kbd><kbd>>F5</kbd>（VS Code Stop） |
-|    <kbd>V</kbd>    |              <kbd>⌃</kbd><kbd>V</kbd>Ctrl+V (Vim Prefix)               |                      |
-|    <kbd>B</kbd>    | <kbd>⌃</kbd><kbd>B</kbd>Ctrl+B ([Tmux](http://tmux.github.io)  Prefix) |                      |
+|    <kbd>D</kbd>    |               Cmd+Delete_or_Backspace               | Alt+Delete_or_Backspace |
+|    <kbd>Z</kbd>    |               <kbd>?</kbd><kbd>Z</kbd> Ctrl+Z  (SIGTSTP)| <kbd>?</kbd><kbd>>F5</kbd>VS Code Stop  |
+|    <kbd>X</kbd>    |               Cmd+Forward_Delete|  Alt+Forward_Delete   |
+|    <kbd>C</kbd>    |                <kbd>F5</kbd> (VS Code Debug)| <kbd>?</kbd><kbd>F5</kbd> (VS Code Run) |
+|    <kbd>V</kbd>    |              <kbd>?</kbd><kbd>V</kbd>Ctrl+V (Vim Prefix)|                      |
+|    <kbd>B</kbd>    | <kbd>?</kbd><kbd>B</kbd>Ctrl+B ([Tmux](http://tmux.github.io)  Prefix) |                      |
 
 
 

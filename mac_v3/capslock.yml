@@ -1377,10 +1377,10 @@ rules:
       #==========================================================#
       # ( d ) -->  Ctrl-D (EOF)   |  Define                      #
       #==========================================================#
-      - description: 'command + d = define'
+      - description: 'command + d = alt + delete_or_backspace'
         type: basic
         from: { key_code: d, modifiers: { mandatory: [ left_command,  right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: d, modifiers: [ left_control, left_command ] } ]
+        to: [ { key_code: delete_or_backspace, modifiers: [ left_option ] } ]
 
       - description: 'd = command + delete_or_backspace'
         type: basic
@@ -1390,10 +1390,15 @@ rules:
       #==========================================================#
       # ( z ) -->  Ctrl-Z (SIGTSTP)  |  F5 (VS Code Debug)       #
       #==========================================================#
-      - description: 'command + z = F5 (vscode debug)'
+      # - description: 'command + z = F5 (vscode debug)'
+      #   type: basic
+      #   from: { key_code: z, modifiers: { mandatory: [ left_command,  right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { key_code: f5 } ]
+
+      - description: 'command + z = shift + F5 (vscode stop)'
         type: basic
         from: { key_code: z, modifiers: { mandatory: [ left_command,  right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: f5 } ]
+        to: [ { key_code: f5 , modifiers: [ left_shift ] } ]
 
       - description: 'z = ctrl-z'
         type: basic
@@ -1403,28 +1408,49 @@ rules:
       #==========================================================#
       # ( x ) -->  Ctrl-R (Run)  |  Ctrl+F5 (VS Code Run)        #
       #==========================================================#
-      - description: 'command + x = ctrl + F5 (vscode run)'
+      # - description: 'command + x = ctrl + F5 (vscode run)'
+      #   type: basic
+      #   from: { key_code: x, modifiers: atory: [ left_command,  right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { key_code: f5 , modifiers: [ left_control ] } ]
+
+      # - description: 'x = ctrl-r'
+      #   type: basic
+      #   from: { key_code: x, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { key_code: r , modifiers: [ left_control ] } ]
+
+      - description: 'command + x = alt + delete_forward'
         type: basic
         from: { key_code: x, modifiers: { mandatory: [ left_command,  right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: f5 , modifiers: [ left_control ] } ]
+        to: [ { key_code: delete_forward, modifiers: [ left_option ] } ]
 
-      - description: 'x = ctrl-r'
+      - description: 'x = command + delete_forward'
         type: basic
         from: { key_code: x, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: r , modifiers: [ left_control ] } ]
+        to: [ { key_code: delete_forward , modifiers: [ left_command ] } ]
 
       #==========================================================#
       # ( c ) -->  Ctrl-C (SIGINT)  |  Shift+F5 (VS Code Stop)   #
       #==========================================================#
-      - description: 'command + c = shift + F5 (vscode stop)'
+      # - description: 'command + c = shift + F5 (vscode stop)'
+      #   type: basic
+      #   from: { key_code: c, modifiers: { mandatory: [ left_command,  right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { key_code: f5 , modifiers: [ left_shift ] } ]
+
+
+      # - description: 'c = ctrl-c'
+      #   type: basic
+      #   from: { key_code: c, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { key_code: c , modifiers: [ left_control ] } ]
+
+      - description: 'command + c = ctrl + F5 (vscode run)'
         type: basic
         from: { key_code: c, modifiers: { mandatory: [ left_command,  right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: f5 , modifiers: [ left_shift ] } ]
-
-      - description: 'c = ctrl-c'
+        to: [ { key_code: f5 , modifiers: [ left_control ] } ]
+        
+      - description: 'c = F5 (vscode debug)'
         type: basic
-        from: { key_code: c, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: c , modifiers: [ left_control ] } ]
+        from: { key_code: c, modifiers: { mandatory: [ left_command,  right_command,right_control,right_shift,right_option ] } }
+        to: [ { key_code: f5 } ]
 
       #==========================================================#
       # ( v ) -->  Vim Prefix Meta Key                           #
