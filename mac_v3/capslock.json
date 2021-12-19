@@ -4512,8 +4512,10 @@
           },
           "to": [
             {
-              "key_code": "backspace",
-              "modifiers": []
+              "key_code": "q",
+              "modifiers": [
+                "left_command"
+              ]
             }
           ]
         },
@@ -4920,7 +4922,7 @@
           ]
         },
         {
-          "description": "option + t = Storage Management",
+          "description": "option + t = notes",
           "type": "basic",
           "from": {
             "key_code": "t",
@@ -4936,7 +4938,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'Storage management'"
+              "shell_command": "open -a notes"
             }
           ]
         },
@@ -4977,7 +4979,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'Google Chrome' https://www.notion.so/fa08e3f8d6c349c4897af496a5058316?v=14fe289b0f3d41a5b6e0c06391880307"
+              "shell_command": "open https://www.notion.so/fa08e3f8d6c349c4897af496a5058316"
             }
           ]
         },
@@ -4998,7 +5000,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'Google Chrome' https://twitter.com/home"
+              "shell_command": "open https://twitter.com/home"
             }
           ]
         },
@@ -5018,7 +5020,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'Google Chrome' https://feedly.com/"
+              "shell_command": "open https://feedly.com/"
             }
           ]
         },
@@ -5039,12 +5041,12 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'Google Chrome' https://www.youtube.com/feed/subscriptions"
+              "shell_command": "open https://www.youtube.com/feed/subscriptions"
             }
           ]
         },
         {
-          "description": "option + f = YouTube Watch Later",
+          "description": "option + f = VnDirect",
           "type": "basic",
           "from": {
             "key_code": "f",
@@ -5060,7 +5062,7 @@
           },
           "to": [
             {
-              "shell_command": "open -a 'Google Chrome' https://www.youtube.com/playlist?list=WL"
+              "shell_command": "open https://banggia.vndirect.com.vn/chung-khoan/danh-muc"
             }
           ]
         },
@@ -5101,7 +5103,7 @@
           },
           "to": [
             {
-              "shell_command": "open \"x-apple.systempreferences:com.apple.preference\""
+              "shell_command": "open 'x-apple.systempreferences:com.apple.preference\\'"
             }
           ]
         },

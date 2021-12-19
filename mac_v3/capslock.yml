@@ -1254,31 +1254,31 @@ rules:
 
 
       #==========================================================#
-      # ( e ) --> safari / finder / mail                         #
+      # ( e ) --> finder / finder downloads / finder home                         #
       #==========================================================#
-      - description: 'command + e = finder'
+      - description: 'command + e = Finder Downloads'
         type: basic
         from: { key_code: e, modifiers: { mandatory: [ left_command, right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a finder } ]
+        to: [ { shell_command: open $HOME/Downloads } ]
 
-      - description: 'option + e = mail'
+      - description: 'option + e = Finder Home'
         type: basic
         from: { key_code: e, modifiers: { mandatory: [ left_option, right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a mail } ]
+        to: [ { shell_command: open $HOME } ]
 
-      - description: 'e = safari'
+      - description: 'e = Finder'
         type: basic
         from: { key_code: e, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a Safari } ]
+        to: [ { shell_command: open -a finder } ]
 
 
       #==========================================================#
-      # ( r ) --> iterm / preview / terminal                     #
+      # ( r ) --> iterm / finder project / terminal                     #
       #==========================================================#
-      - description: 'command + r = preview'
+      - description: 'command + r = Finder project'
         type: basic
         from: { key_code: r, modifiers: { mandatory: [ left_command, right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a Preview } ]
+        to: [ { shell_command: open $HOME/projects } ]
 
       - description: 'option + r = terminal'
         type: basic
@@ -1291,12 +1291,12 @@ rules:
         to: [ { shell_command: open -a iTerm } ]
 
       #==========================================================#
-      # ( t ) --> vscode / typora / notes                        #
+      # ( t ) --> vscode / screen time / storage management
       #==========================================================#
-      - description: 'command + t = typora'
+      - description: 'command + t = Screen Time'
         type: basic
         from: { key_code: t, modifiers: { mandatory: [ left_command, right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a Typora } ]
+        to: [ { shell_command: open /System/Library/PreferencePanes/ScreenTime.prefPane } ]
 
       - description: 'option + t = notes'
         type: basic
@@ -1309,58 +1309,58 @@ rules:
         to: [ { shell_command: open -a 'Visual Studio Code' } ]
 
       #==========================================================#
-      # ( y ) --> siri / karabiner / amphetamine                 #
+      # ( y ) --> feedly / notion readdict / twitter                 #
       #==========================================================#
-      - description: 'command + y = karabiner'
+      - description: 'command + y = Notion ReadDict'
         type: basic
         from: { key_code: y, modifiers: { mandatory: [ left_command, right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a Karabiner-Elements } ]
+        to: [ { shell_command: open https://www.notion.so/fa08e3f8d6c349c4897af496a5058316 } ]
 
-      - description: 'option + y = amphetamine'
+      - description: 'option + y = Twitter'
         type: basic
         from: { key_code: y, modifiers: { mandatory: [ left_option, right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a amphetamine } ]
+        to: [ { shell_command: open https://twitter.com/home } ]
 
-      - description: 'y = Siri'
+      - description: 'y = Feedly'
         type: basic
         from: { key_code: y, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a Siri } ]
+        to: [ { shell_command: open https://feedly.com/ } ]
 
       #==========================================================#
-      # ( f ) --> alfred 4 / Dash / Dictionary                   #
+      # ( f ) --> chrome / yt subs / vndirect                   #
       #==========================================================#
-      - description: 'command + f = Dash'
+      - description: 'command + f = YouTube Subs'
         type: basic
         from: { key_code: f, modifiers: { mandatory: [ left_command, right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a Dash } ]
+        to: [ { shell_command: open https://www.youtube.com/feed/subscriptions } ]
 
-      - description: 'option + f = Dictionary'
+      - description: 'option + f = VnDirect'
         type: basic
         from: { key_code: f, modifiers: { mandatory: [ left_option, right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a Dictionary } ]
+        to: [ { shell_command: open https://banggia.vndirect.com.vn/chung-khoan/danh-muc } ]
 
-      - description: 'f = Alfred 4'
+      - description: 'f = Chrome'
         type: basic
         from: { key_code: f, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a 'Alfred 4' } ]
-
-      #==========================================================#
-      # ( g ) --> idea / chrome / calender                       #
-      #==========================================================#
-      - description: 'command + g = Chrome'
-        type: basic
-        from: { key_code: g, modifiers: { mandatory: [ left_command, right_command,right_control,right_shift,right_option ] } }
         to: [ { shell_command: open -a 'Google Chrome' } ]
 
-      - description: 'option + g = Calender'
+      #==========================================================#
+      # ( g ) --> alfred 4 / system preferences / safari                       #
+      #==========================================================#
+      - description: 'command + g = System Preferences'
+        type: basic
+        from: { key_code: g, modifiers: { mandatory: [ left_command, right_command,right_control,right_shift,right_option ] } }
+        to: [ { shell_command: open 'x-apple.systempreferences:com.apple.preference\' } ]
+
+      - description: 'option + g = Safari'
         type: basic
         from: { key_code: g, modifiers: { mandatory: [ left_option, right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a Calendar } ]
+        to: [ { shell_command: open -a safari } ]
 
-      - description: 'g = Intellij IDEA'
+      - description: 'g = Alfred 4'
         type: basic
         from: { key_code: g, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a 'IntelliJ IDEA' } ]
+        to: [ { shell_command: open -a 'Alfred 4' } ]
 
 
 

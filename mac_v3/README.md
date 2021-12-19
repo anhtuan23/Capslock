@@ -161,7 +161,7 @@ Hold  **<kbd>✱</kbd> Hyper** to enable hyper functionalities. We will assume a
 |    <kbd>R</kbd>    |       iTerm2       |  Finder projects  |  Terminal   |
 |    <kbd>T</kbd>    | Visual Studio Code |  Screen Time   |    Storage Management     |
 |    <kbd>Y</kbd>    |        Feedly        | Notion ReadDict | Twitter |
-|    <kbd>F</kbd>    |      Chrome      |   YouTube Subs    | YouTube WL  |
+|    <kbd>F</kbd>    |      Chrome      |   YouTube Subs    | VnDirect  |
 |    <kbd>G</kbd>    |   Alfred 4    |  System Preferences   |  Safari   |
 
 
