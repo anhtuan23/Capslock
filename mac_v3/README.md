@@ -141,9 +141,9 @@ Hold  **<kbd>✱</kbd> Hyper** to enable hyper functionalities. We will assume a
 | Key\Mod |      <kbd>✱</kbd>      |       <kbd>⌘</kbd>       |       <kbd>⌥</kbd>        |       <kbd>⌃</kbd>       |     <kbd>⇧</kbd>      |
 | :-----: | :---------: | :-----------: | :------------: | :-----------: | :--------: |
 |    <kbd>⇥</kbd>    |  next app   |   prev app    | switch desktop |               | switch tab |
-|    <kbd>Q</kbd>    |  backspace  |   delete forward   |                |  Lock Screen  |   Logout   |
+|    <kbd>Q</kbd>    |  backspace  |   close app   |                |  Lock Screen  |   Logout   |
 |    <kbd>W</kbd>    |  close tab  | close all win |                | Display Sleep |   Sleep    |
-|    <kbd>A</kbd>    | **win app** |  expose all   |  show desktop  |   LaunchPad   |            |
+|    <kbd>A</kbd>    | delete forward |  expose all   |  show desktop  |   LaunchPad   |            |
 |    <kbd>S</kbd>    |  next tab   |   prev tab    |    next win    |   prev win    |            |
 
 
@@ -174,7 +174,7 @@ Hold  **<kbd>✱</kbd> Hyper** to enable hyper functionalities. We will assume a
 
 | Key\Mod |                         <kbd>✱</kbd>                          |          <kbd>⌘</kbd>           |
 | :-----: | :------------------------------------------------: | :------------------: |
-|    <kbd>D</kbd>    |               <kbd>⌃</kbd><kbd>D</kbd> Ctrl+D (Send EOF)               | Define (Force touch) |
+|    <kbd>D</kbd>    |               <kbd>⌃</kbd><kbd>D</kbd> Cmd+Delete_or_Backspace               | Define (Force touch) |
 |    <kbd>Z</kbd>    |               <kbd>⌃</kbd><kbd>Z</kbd> Ctrl+Z  (SIGTSTP)               |  <kbd>F5</kbd> (VS Code Debug)  |
 |    <kbd>X</kbd>    |               <kbd>⌃</kbd><kbd>R</kbd> Ctrl+R (IDE Run)                |  <kbd>⌃</kbd><kbd>F5</kbd> (VS Code Run)   |
 |    <kbd>C</kbd>    |                <kbd>⌃</kbd><kbd>C</kbd>  Ctrl+C (SIGINT)                 | <kbd>⇧</kbd><kbd>>F5</kbd>（VS Code Stop） |
