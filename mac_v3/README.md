@@ -74,14 +74,14 @@ Hold  **<kbd>✱</kbd> Hyper** to enable hyper functionalities. We will assume a
 | Feature | **Move** | **Select** | **WordSel** | **Window** | **Desktop** |  🖱️   | **🖱️⏫** |  🖲️   |  🖲️⏫  |
 | :-----: | :------: | :--------: | :---------: | :--------: | :---------: | :--: | :----: | :--: | :--: |
 | Key\Mod |    <kbd>✱</kbd>     |     <kbd>⌘</kbd>      |     <kbd>⌘</kbd><kbd>⌥</kbd>      |     <kbd>⇧</kbd>      |      <kbd>⌃</kbd>      |  <kbd>⌥</kbd>   |   <kbd>⇧</kbd><kbd>⌥</kbd>   |  <kbd>⇧</kbd><kbd>⌃</kbd>  |  <kbd>⇧</kbd><kbd>⌘</kbd>  |
-|    <kbd>H</kbd>    |   Left   | word left  |  word left  |  prev tab  |  prev desk  |  ⬅️   |   ⬅️⏫   |  ⬅️   |  ⬅️⏫  |
-|    <kbd>J</kbd>    |   Down   | line down  | 3 line down |  next app  |    focus    |  ⬇️   |   ⬇️⏫   |  ⬇️   |  ⬇️⏫  |
-|    <kbd>K</kbd>    |    Up    |  line up   |  3 line up  |  prev app  | expose all  |  ⬆️   |   ⬆️⏫   |  ⬆️   |  ⬆️⏫  |
-|    <kbd>L</kbd>    |  Right   | word right | word right  |  next tab  |  next desk  |  ➡️   |   ➡️⏫   |  ➡️   |  ➡️⏫  |
-|    <kbd>U</kbd>    |   PgUp   | prev page  |  prev page  |   zoom-    | fullscreen  |  🖱️L  |   🖱️L   |  ➡️   |  ➡️⏫  |
-|    <kbd>I</kbd>    |   Home   | line head  |  end2head   |  prev win  |    hide     |  🖱️R  |   🖱️R   |  ⬆️   |  ⬆️⏫  |
-|    <kbd>O</kbd>    |   End    |  line end  |  head2end   |  next win  |  hide all   |  🖱️B  |   🖱️B   |  ⬇️   |  ⬇️⏫  |
-|    <kbd>P</kbd>    |   PgDn   | next page  |  next page  |   zoom+    |  Launchpad  |  🖱️F  |   🖱️F   |  ⬅️   |  ⬅️⏫  |
+|    <kbd>H</kbd>    |   Left   | _  |  _  |  _  |  _  | _   |   _   |  _   |  _  |
+|    <kbd>J</kbd>    |   Down   | _  |  _  |  _  |  _  | _   |   _   |  _   |  _  |
+|    <kbd>K</kbd>    |    Up    | _  |  _  |  _  |  _  | _   |   _   |  _   |  _  |
+|    <kbd>L</kbd>    |  Right   | _  |  _  |  _  |  _  | _   |   _   |  _   |  _  |
+|    <kbd>U</kbd>    |   PgUp   | _  |  _  |  _  |  _  | _   |   _   |  _   |  _  |
+|    <kbd>I</kbd>    |   Home   | 5 ups  |  10 ups  |  _  |  _  | _   |   _   |  _   |  _  |
+|    <kbd>O</kbd>    |   End    | 5 downs  |  10 downs  |  _  |  _  | _   |   _   |  _   |  _  |
+|    <kbd>P</kbd>    |   PgDn   | _  |  _  |  _  |  _  | _   |   _   |  _   |  _  |
 
 
 

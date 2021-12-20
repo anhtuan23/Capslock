@@ -395,53 +395,53 @@ rules:
       #==========================================================#
       # ( u ) + ( ⌘⌥⇧⌃ )  -> ( PageUp )                          #
       #==========================================================#
-      # command: selection
-      - description: 'command + u = shift + page_up'
-        type: basic
-        from: { key_code: u, modifiers: { mandatory: [ left_command, right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: page_up , modifiers: [ left_shift ] } ]
+      # # command: selection
+      # - description: 'command + u = shift + page_up'
+      #   type: basic
+      #   from: { key_code: u, modifiers: { mandatory: [ left_command, right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { key_code: page_up , modifiers: [ left_shift ] } ]
 
-      # option + command: page selection
-      - description: 'option + command + u = shift + page_up'
-        type: basic
-        from: { key_code: u, modifiers: { mandatory: [ left_option,left_command, right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: page_up , modifiers: [ left_shift ] } ]
+      # # option + command: page selection
+      # - description: 'option + command + u = shift + page_up'
+      #   type: basic
+      #   from: { key_code: u, modifiers: { mandatory: [ left_option,left_command, right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { key_code: page_up , modifiers: [ left_shift ] } ]
 
-      # shift: tab/win management (TODO: require manual setup)
-      - description: 'shift + u = option + command + hyphen (zoom out)'
-        type: basic
-        from: { key_code: u, modifiers: { mandatory: [ left_shift ,right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: hyphen , modifiers: [ left_command,left_option ] } ]
+      # # shift: tab/win management (TODO: require manual setup)
+      # - description: 'shift + u = option + command + hyphen (zoom out)'
+      #   type: basic
+      #   from: { key_code: u, modifiers: { mandatory: [ left_shift ,right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { key_code: hyphen , modifiers: [ left_command,left_option ] } ]
 
       # control: desktop management
-      - description: 'control + u = ctrl + command + f (fullscreen)'
-        type: basic
-        from: { key_code: u, modifiers: { mandatory: [ left_control ,right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: f , modifiers: [ left_control,left_command ] } ]
+      # - description: 'control + u = ctrl + command + f (fullscreen)'
+      #   type: basic
+      #   from: { key_code: u, modifiers: { mandatory: [ left_control ,right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { key_code: f , modifiers: [ left_control,left_command ] } ]
 
       # option: mouse left click
-      - description: 'option + u = mouse left click'
-        type: basic
-        from: { key_code: u, modifiers: { mandatory: [ left_option, right_command,right_control,right_shift,right_option ] } }
-        to: [ { pointing_button: button1 } ]
+      # - description: 'option + u = mouse left click'
+      #   type: basic
+      #   from: { key_code: u, modifiers: { mandatory: [ left_option, right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { pointing_button: button1 } ]
 
       # shift + option: mouse left click
-      - description: 'shift + option + u = mouse left click'
-        type: basic
-        from: { key_code: u, modifiers: { mandatory: [ left_shift,left_option,  right_command,right_control,right_shift,right_option ] } }
-        to: [ { pointing_button: button1 } ]
+      # - description: 'shift + option + u = mouse left click'
+      #   type: basic
+      #   from: { key_code: u, modifiers: { mandatory: [ left_shift,left_option,  right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { pointing_button: button1 } ]
 
       # shift + control: mouse wheel
-      - description: 'shift + control + u = mouse wheel left (rev)'
-        type: basic
-        from: { key_code: u, modifiers: { mandatory: [ left_shift,left_control,  right_command,right_control,right_shift,right_option ] } }
-        to: [ { mouse_key: { horizontal_wheel: -64 } } ]
+      # - description: 'shift + control + u = mouse wheel left (rev)'
+      #   type: basic
+      #   from: { key_code: u, modifiers: { mandatory: [ left_shift,left_control,  right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { mouse_key: { horizontal_wheel: -64 } } ]
 
       # shift + command: mouse wheel fast
-      - description: 'shift + command + u = mouse wheel left (rev) fast'
-        type: basic
-        from: { key_code: u, modifiers: { mandatory: [ left_shift,left_command,  right_command,right_control,right_shift,right_option ] } }
-        to: [ { mouse_key: { horizontal_wheel: -128 } } ]
+      # - description: 'shift + command + u = mouse wheel left (rev) fast'
+      #   type: basic
+      #   from: { key_code: u, modifiers: { mandatory: [ left_shift,left_command,  right_command,right_control,right_shift,right_option ] } }
+        # to: [ { mouse_key: { horizontal_wheel: -128 } } ]
 
       # normal: cursor move
       - description: ' u = page_up'
@@ -452,57 +452,65 @@ rules:
 
 
       #==========================================================#
-      # ( i ) + ( ⌘⌥⇧⌃ )  -> ( PageUp )                          #
+      # ( i ) + ( ⌘⌥⇧⌃ )  -> ( Home )                          #
       #==========================================================#
       # command: selection
-      - description: 'command + i = shift + home'
+      # - description: 'command + i = shift + home'
+      #   type: basic
+      #   from: { key_code: i, modifiers: { mandatory: [ left_command, right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { key_code: home , modifiers: [ left_shift ] } ]
+      - description: 'command + i = 5 ups'
         type: basic
         from: { key_code: i, modifiers: { mandatory: [ left_command, right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: home , modifiers: [ left_shift ] } ]
+        to: [ { key_code: up_arrow },{ key_code: up_arrow },{ key_code: up_arrow },{ key_code: up_arrow },{ key_code: up_arrow } ]
 
       # option + command: line selection
-      - description: 'option + command + i = select whole line to head'
+      # - description: 'option + command + i = select whole line to head'
+      #   type: basic
+      #   from: { key_code: i, modifiers: { mandatory: [ left_option,left_command, right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { key_code: end },{ key_code: home , modifiers: [ left_shift ] },{ key_code: home , modifiers: [ left_shift ] } ]
+      - description: 'option + command + i = 10 ups'
         type: basic
         from: { key_code: i, modifiers: { mandatory: [ left_option,left_command, right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: end },{ key_code: home , modifiers: [ left_shift ] },{ key_code: home , modifiers: [ left_shift ] } ]
+        to: [ { key_code: up_arrow },{ key_code: up_arrow },{ key_code: up_arrow },{ key_code: up_arrow },{ key_code: up_arrow }, { key_code: up_arrow },{ key_code: up_arrow },{ key_code: up_arrow },{ key_code: up_arrow },{ key_code: up_arrow } ]
 
-      # shift: tab/win management (TODO: require manual setup)
-      - description: 'shift + i = command + shift + ` (prev window within app)'
-        type: basic
-        from: { key_code: i, modifiers: { mandatory: [ left_shift ,right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: grave_accent_and_tilde , modifiers: [ left_command,left_shift ] } ]
+      # # shift: tab/win management (TODO: require manual setup)
+      # - description: 'shift + i = command + shift + ` (prev window within app)'
+      #   type: basic
+      #   from: { key_code: i, modifiers: { mandatory: [ left_shift ,right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { key_code: grave_accent_and_tilde , modifiers: [ left_command,left_shift ] } ]
 
-      # control: desktop management
-      - description: 'control + i = command + h (hide current window)'
-        type: basic
-        from: { key_code: i, modifiers: { mandatory: [ left_control ,right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: h , modifiers: [ left_command ] } ]
+      # # control: desktop management
+      # - description: 'control + i = command + h (hide current window)'
+      #   type: basic
+      #   from: { key_code: i, modifiers: { mandatory: [ left_control ,right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { key_code: h , modifiers: [ left_command ] } ]
 
-      # option: mouse right click
-      - description: 'option + i = mouse right click'
-        type: basic
-        from: { key_code: i, modifiers: { mandatory: [ left_option, right_command,right_control,right_shift,right_option ] } }
-        to: [ { pointing_button: button2 } ]
+      # # option: mouse right click
+      # - description: 'option + i = mouse right click'
+      #   type: basic
+      #   from: { key_code: i, modifiers: { mandatory: [ left_option, right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { pointing_button: button2 } ]
 
-      # shift + option: mouse right click
-      - description: 'shift + option + i = mouse move down fast'
-        type: basic
-        from: { key_code: i, modifiers: { mandatory: [ left_shift,left_option,  right_command,right_control,right_shift,right_option ] } }
-        to: [ { pointing_button: button2 } ]
+      # # shift + option: mouse right click
+      # - description: 'shift + option + i = mouse move down fast'
+      #   type: basic
+      #   from: { key_code: i, modifiers: { mandatory: [ left_shift,left_option,  right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { pointing_button: button2 } ]
 
-      # shift + control: mouse wheel reverse
-      - description: 'shift + control + i = mouse wheel down (rev)'
-        type: basic
-        from: { key_code: i, modifiers: { mandatory: [ left_shift,left_control,  right_command,right_control,right_shift,right_option ] } }
-        to: [ { mouse_key: { vertical_wheel: -64 } } ]
+      # # shift + control: mouse wheel reverse
+      # - description: 'shift + control + i = mouse wheel down (rev)'
+      #   type: basic
+      #   from: { key_code: i, modifiers: { mandatory: [ left_shift,left_control,  right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { mouse_key: { vertical_wheel: -64 } } ]
 
-      # shift + command: mouse wheel reverse fast
-      - description: 'shift + command + i = mouse wheel down (rev) fast'
-        type: basic
-        from: { key_code: i, modifiers: { mandatory: [ left_shift,left_command,  right_command,right_control,right_shift,right_option ] } }
-        to: [ { mouse_key: { vertical_wheel: -128 } } ]
+      # # shift + command: mouse wheel reverse fast
+      # - description: 'shift + command + i = mouse wheel down (rev) fast'
+      #   type: basic
+      #   from: { key_code: i, modifiers: { mandatory: [ left_shift,left_command,  right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { mouse_key: { vertical_wheel: -128 } } ]
 
-      # normal: cursor move
+      # normal: home
       - description: ' i = home'
         type: basic
         from: { key_code: i, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
@@ -513,54 +521,58 @@ rules:
       # ( o ) + ( ⌘⌥⇧⌃ )  -> ( PageUp )                          #
       #==========================================================#
       # command: selection
-      - description: 'command + o = shift + end'
+      - description: 'command + o = 5 downs'
         type: basic
         from: { key_code: o, modifiers: { mandatory: [ left_command, right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: end , modifiers: [ left_shift ] } ]
+        to: [ { key_code: down_arrow }, { key_code: down_arrow }, { key_code: down_arrow }, { key_code: down_arrow }, { key_code: down_arrow }, ]
 
       # option + command: line selection
-      - description: 'option + command + o = select whole'
+      # - description: 'option + command + o = select whole'
+      #   type: basic
+      #   from: { key_code: o, modifiers: { mandatory: [ left_option,left_command, right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { key_code: home },{ key_code: end , modifiers: [ left_shift ] } ]
+      - description: 'option + command + o = 10 downs'
         type: basic
         from: { key_code: o, modifiers: { mandatory: [ left_option,left_command, right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: home },{ key_code: end , modifiers: [ left_shift ] } ]
+        to: [ { key_code: down_arrow }, { key_code: down_arrow }, { key_code: down_arrow }, { key_code: down_arrow }, { key_code: down_arrow }, { key_code: down_arrow }, { key_code: down_arrow }, { key_code: down_arrow }, { key_code: down_arrow }, { key_code: down_arrow }]
 
-      # shift: tab/win management (TODO: require manual setup)
-      - description: 'shift + o = command ` (next window within app)'
-        type: basic
-        from: { key_code: o, modifiers: { mandatory: [ left_shift ,right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: grave_accent_and_tilde , modifiers: [ left_command ] } ]
+      # # shift: tab/win management (TODO: require manual setup)
+      # - description: 'shift + o = command ` (next window within app)'
+      #   type: basic
+      #   from: { key_code: o, modifiers: { mandatory: [ left_shift ,right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { key_code: grave_accent_and_tilde , modifiers: [ left_command ] } ]
 
-      # control: desktop management
-      - description: 'control + o = option + command + h (expose all)'
-        type: basic
-        from: { key_code: o, modifiers: { mandatory: [ left_control ,right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: up_arrow , modifiers: [ left_control ] } ]
+      # # control: desktop management
+      # - description: 'control + o = option + command + h (expose all)'
+      #   type: basic
+      #   from: { key_code: o, modifiers: { mandatory: [ left_control ,right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { key_code: up_arrow , modifiers: [ left_control ] } ]
 
-      # option: mouse backward
-      - description: 'option + o = mouse backward'
-        type: basic
-        from: { key_code: o, modifiers: { mandatory: [ left_option, right_command,right_control,right_shift,right_option ] } }
-        to: [ { pointing_button: button4 } ]
+      # # option: mouse backward
+      # - description: 'option + o = mouse backward'
+      #   type: basic
+      #   from: { key_code: o, modifiers: { mandatory: [ left_option, right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { pointing_button: button4 } ]
 
-      # shift + option: mouse backward
-      - description: 'shift + option + o = mouse backward'
-        type: basic
-        from: { key_code: o, modifiers: { mandatory: [ left_shift,left_option,  right_command,right_control,right_shift,right_option ] } }
-        to: [ { pointing_button: button4 } ]
+      # # shift + option: mouse backward
+      # - description: 'shift + option + o = mouse backward'
+      #   type: basic
+      #   from: { key_code: o, modifiers: { mandatory: [ left_shift,left_option,  right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { pointing_button: button4 } ]
 
-      # shift + control: mouse wheel
-      - description: 'shift + control + o = mouse wheel up (rev)'
-        type: basic
-        from: { key_code: o, modifiers: { mandatory: [ left_shift,left_control,  right_command,right_control,right_shift,right_option ] } }
-        to: [ { mouse_key: { vertical_wheel: 64 } } ]
+      # # shift + control: mouse wheel
+      # - description: 'shift + control + o = mouse wheel up (rev)'
+      #   type: basic
+      #   from: { key_code: o, modifiers: { mandatory: [ left_shift,left_control,  right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { mouse_key: { vertical_wheel: 64 } } ]
 
-      # shift + command: mouse wheel reverse
-      - description: 'shift + command + o = mouse wheel up (rev) fast'
-        type: basic
-        from: { key_code: o, modifiers: { mandatory: [ left_shift,left_command,  right_command,right_control,right_shift,right_option ] } }
-        to: [ { mouse_key: { vertical_wheel: 128 } } ]
+      # # shift + command: mouse wheel reverse
+      # - description: 'shift + command + o = mouse wheel up (rev) fast'
+      #   type: basic
+      #   from: { key_code: o, modifiers: { mandatory: [ left_shift,left_command,  right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { mouse_key: { vertical_wheel: 128 } } ]
 
-      # normal: cursor move
+      # normal: end
       - description: ' o = end'
         type: basic
         from: { key_code: o, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
@@ -568,57 +580,57 @@ rules:
 
 
       #==========================================================#
-      # ( p ) + ( ⌘⌥⇧⌃ )  -> ( PageUp )                          #
+      # ( p ) + ( ⌘⌥⇧⌃ )  -> ( PageDown )                          #
       #==========================================================#
-      # command: selection
-      - description: 'command + p = shift + page_down'
-        type: basic
-        from: { key_code: p, modifiers: { mandatory: [ left_command, right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: page_down , modifiers: [ left_shift ] } ]
+      # # command: selection
+      # - description: 'command + p = shift + page_down'
+      #   type: basic
+      #   from: { key_code: p, modifiers: { mandatory: [ left_command, right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { key_code: page_down , modifiers: [ left_shift ] } ]
 
-      # option + command: word/para selection
-      - description: 'option + command + p = shift + page_down'
-        type: basic
-        from: { key_code: p, modifiers: { mandatory: [ left_option,left_command, right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: page_down , modifiers: [ left_shift ] } ]
+      # # option + command: word/para selection
+      # - description: 'option + command + p = shift + page_down'
+      #   type: basic
+      #   from: { key_code: p, modifiers: { mandatory: [ left_option,left_command, right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { key_code: page_down , modifiers: [ left_shift ] } ]
 
-      # shift: tab/win management (TODO: require manual setup)
-      - description: 'shift + p = option + command + equal_sign (zoom in)'
-        type: basic
-        from: { key_code: p, modifiers: { mandatory: [ left_shift ,right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: equal_sign , modifiers: [ left_command,left_option ] } ]
+      # # shift: tab/win management (TODO: require manual setup)
+      # - description: 'shift + p = option + command + equal_sign (zoom in)'
+      #   type: basic
+      #   from: { key_code: p, modifiers: { mandatory: [ left_shift ,right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { key_code: equal_sign , modifiers: [ left_command,left_option ] } ]
 
-      # control: desktop management
-      - description: 'control + p = LaunchPad'
-        type: basic
-        from: { key_code: p, modifiers: { mandatory: [ left_control ,right_command,right_control,right_shift,right_option ] } }
-        to: [ { shell_command: open -a 'Launchpad' } ]
+      # # control: desktop management
+      # - description: 'control + p = LaunchPad'
+      #   type: basic
+      #   from: { key_code: p, modifiers: { mandatory: [ left_control ,right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { shell_command: open -a 'Launchpad' } ]
 
-      # option: mouse forward
-      - description: 'option + p = mouse forward'
-        type: basic
-        from: { key_code: p, modifiers: { mandatory: [ left_option, right_command,right_control,right_shift,right_option ] } }
-        to: [ { pointing_button: button5 } ]
+      # # option: mouse forward
+      # - description: 'option + p = mouse forward'
+      #   type: basic
+      #   from: { key_code: p, modifiers: { mandatory: [ left_option, right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { pointing_button: button5 } ]
 
-      # shift + option: mouse forward
-      - description: 'shift + option + p = mouse forward'
-        type: basic
-        from: { key_code: p, modifiers: { mandatory: [ left_shift,left_option,  right_command,right_control,right_shift,right_option ] } }
-        to: [ { pointing_button: button5 } ]
+      # # shift + option: mouse forward
+      # - description: 'shift + option + p = mouse forward'
+      #   type: basic
+      #   from: { key_code: p, modifiers: { mandatory: [ left_shift,left_option,  right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { pointing_button: button5 } ]
 
-      # shift + control: mouse wheel reverse
-      - description: 'shift + control + p = mouse wheel right (rev)'
-        type: basic
-        from: { key_code: p, modifiers: { mandatory: [ left_shift,left_control,  right_command,right_control,right_shift,right_option ] } }
-        to: [ { mouse_key: { horizontal_wheel: 64 } } ]
+      # # shift + control: mouse wheel reverse
+      # - description: 'shift + control + p = mouse wheel right (rev)'
+      #   type: basic
+      #   from: { key_code: p, modifiers: { mandatory: [ left_shift,left_control,  right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { mouse_key: { horizontal_wheel: 64 } } ]
 
-      # shift + command: mouse wheel reverse fast
-      - description: 'shift + command + p = mouse wheel right (rev) fast'
-        type: basic
-        from: { key_code: p, modifiers: { mandatory: [ left_shift,left_command,  right_command,right_control,right_shift,right_option ] } }
-        to: [ { mouse_key: { horizontal_wheel: 128 } } ]
+      # # shift + command: mouse wheel reverse fast
+      # - description: 'shift + command + p = mouse wheel right (rev) fast'
+      #   type: basic
+      #   from: { key_code: p, modifiers: { mandatory: [ left_shift,left_command,  right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { mouse_key: { horizontal_wheel: 128 } } ]
 
-      # normal: cursor move
+      # normal: page down
       - description: ' p = page_down'
         type: basic
         from: { key_code: p, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
