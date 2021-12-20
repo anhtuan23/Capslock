@@ -69,7 +69,7 @@
           ]
         },
         {
-          "description": "spacebar = language switch",
+          "description": "spacebar = _ hyphen",
           "type": "basic",
           "from": {
             "key_code": "spacebar",
@@ -84,9 +84,9 @@
           },
           "to": [
             {
-              "key_code": "spacebar",
+              "key_code": "hyphen",
               "modifiers": [
-                "left_control"
+                "left_shift"
               ]
             }
           ]
@@ -108,10 +108,9 @@
           },
           "to": [
             {
-              "key_code": "spacebar",
+              "key_code": "hyphen",
               "modifiers": [
-                "left_control",
-                "left_command"
+                "left_shift"
               ]
             }
           ]
