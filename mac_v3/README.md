@@ -174,9 +174,9 @@ Hold  **<kbd>✱</kbd> Hyper** to enable hyper functionalities. We will assume a
 
 | Key\Mod |                         <kbd>?</kbd>                          |          <kbd>?</kbd>           |
 | :-----: | :------------------------------------------------: | :------------------: |
-|    <kbd>D</kbd>    |               Cmd+Delete_or_Backspace               | Alt+Delete_or_Backspace |
+|    <kbd>D</kbd>    |              Alt+Delete_or_Backspace |  Cmd+Delete_or_Backspace |
 |    <kbd>Z</kbd>    |               <kbd>?</kbd><kbd>Z</kbd> Ctrl+Z  (SIGTSTP)| <kbd>?</kbd><kbd>>F5</kbd>VS Code Stop  |
-|    <kbd>X</kbd>    |               Cmd+Forward_Delete|  Alt+Forward_Delete   |
+|    <kbd>X</kbd>    |             Alt+Forward_Delete  |  Cmd+Forward_Delete   |
 |    <kbd>C</kbd>    |                <kbd>F5</kbd> (VS Code Debug)| <kbd>?</kbd><kbd>F5</kbd> (VS Code Run) |
 |    <kbd>V</kbd>    |              <kbd>?</kbd><kbd>V</kbd>Ctrl+V (Vim Prefix)|                      |
 |    <kbd>B</kbd>    | <kbd>?</kbd><kbd>B</kbd>Ctrl+B ([Tmux](http://tmux.github.io)  Prefix) |                      |

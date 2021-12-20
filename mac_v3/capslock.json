@@ -5173,7 +5173,7 @@
       "description": "Hyper Terminal",
       "manipulators": [
         {
-          "description": "command + d = alt + delete_or_backspace",
+          "description": "command + d = cmd + delete_or_backspace",
           "type": "basic",
           "from": {
             "key_code": "d",
@@ -5191,13 +5191,13 @@
             {
               "key_code": "delete_or_backspace",
               "modifiers": [
-                "left_option"
+                "left_command"
               ]
             }
           ]
         },
         {
-          "description": "d = command + delete_or_backspace",
+          "description": "d = option + delete_or_backspace",
           "type": "basic",
           "from": {
             "key_code": "d",
@@ -5214,7 +5214,7 @@
             {
               "key_code": "delete_or_backspace",
               "modifiers": [
-                "left_command"
+                "left_option"
               ]
             }
           ]
@@ -5267,7 +5267,7 @@
           ]
         },
         {
-          "description": "command + x = alt + delete_forward",
+          "description": "command + x = cmd + delete_forward",
           "type": "basic",
           "from": {
             "key_code": "x",
@@ -5285,13 +5285,13 @@
             {
               "key_code": "delete_forward",
               "modifiers": [
-                "left_option"
+                "left_command"
               ]
             }
           ]
         },
         {
-          "description": "x = command + delete_forward",
+          "description": "x = alt + delete_forward",
           "type": "basic",
           "from": {
             "key_code": "x",
@@ -5308,7 +5308,7 @@
             {
               "key_code": "delete_forward",
               "modifiers": [
-                "left_command"
+                "left_option"
               ]
             }
           ]

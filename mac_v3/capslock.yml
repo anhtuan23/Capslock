@@ -1377,15 +1377,15 @@ rules:
       #==========================================================#
       # ( d ) -->  Ctrl-D (EOF)   |  Define                      #
       #==========================================================#
-      - description: 'command + d = alt + delete_or_backspace'
+      - description: 'command + d = cmd + delete_or_backspace'
         type: basic
         from: { key_code: d, modifiers: { mandatory: [ left_command,  right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: delete_or_backspace, modifiers: [ left_option ] } ]
+        to: [ { key_code: delete_or_backspace, modifiers: [ left_command ] } ]
 
-      - description: 'd = command + delete_or_backspace'
+      - description: 'd = option + delete_or_backspace'
         type: basic
         from: { key_code: d, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: delete_or_backspace , modifiers: [ left_command ] } ]
+        to: [ { key_code: delete_or_backspace , modifiers: [ left_option ] } ]
 
       #==========================================================#
       # ( z ) -->  Ctrl-Z (SIGTSTP)  |  F5 (VS Code Debug)       #
@@ -1418,15 +1418,15 @@ rules:
       #   from: { key_code: x, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
       #   to: [ { key_code: r , modifiers: [ left_control ] } ]
 
-      - description: 'command + x = alt + delete_forward'
+      - description: 'command + x = cmd + delete_forward'
         type: basic
         from: { key_code: x, modifiers: { mandatory: [ left_command,  right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: delete_forward, modifiers: [ left_option ] } ]
+        to: [ { key_code: delete_forward, modifiers: [ left_command ] } ]
 
-      - description: 'x = command + delete_forward'
+      - description: 'x = alt + delete_forward'
         type: basic
         from: { key_code: x, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: delete_forward , modifiers: [ left_command ] } ]
+        to: [ { key_code: delete_forward , modifiers: [ left_option ] } ]
 
       #==========================================================#
       # ( c ) -->  Ctrl-C (SIGINT)  |  Shift+F5 (VS Code Stop)   #
