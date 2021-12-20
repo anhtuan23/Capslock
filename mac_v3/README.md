@@ -56,7 +56,7 @@ Capslock works on **ANSI** keyboards and similar layouts. It literally remaps ev
 | <kbd>⇪</kbd> Press |  <kbd>⎋</kbd> Escape  | Click Capslock to emit Escape                      |
 | <kbd>⇪</kbd> Hold  |  <kbd>✱</kbd>  Hyper  | Hold Capslock to enable **Hyper** modifier.        |
 |   <kbd>✱</kbd><kbd>⎋</kbd>    | <kbd>⇪</kbd> Capslock | Press to switch Capslock status |
-|   <kbd>✱</kbd><kbd>␣</kbd>    |     <kbd>⌃</kbd><kbd>␣</kbd>     | Switch input source, +<kbd>⌘</kbd> to emoji                   |
+|   <kbd>✱</kbd><kbd>␣</kbd>    |     <kbd>⌃</kbd><kbd>␣</kbd>     | Shift hyphen, +<kbd>⌘</kbd> to emoji                   |
 
 Note that <kbd>✱</kbd> is implemented as combination of **ALL RIGHT MODIFIERS**:  <kbd>⌘</kbd><kbd>⌥</kbd><kbd>⌃</kbd><kbd>⇧</kbd>. 
 
@@ -71,17 +71,17 @@ Hold  **<kbd>✱</kbd> Hyper** to enable hyper functionalities. We will assume a
 * Hold additional <kbd>⌥</kbd> Option for 🖱️ **mouse move**.  Add <kbd>⇧</kbd>shift to **⏫ accelerate**.  (<kbd>U</kbd>, <kbd>I</kbd>, <kbd>O</kbd>, <kbd>P</kbd> maps to mouse buttons) .
 * <kbd>⇧</kbd><kbd>⌥</kbd> turns navigator to **🖲️ mouse wheel**, and <kbd>⇧</kbd><kbd>⌘</kbd> is the ⏫ **accelerated** version .  `HJKL` for wheel, wihle `UIOP` for reversed wheel move.
 
-| Feature | **Move** | **Select** | **WordSel** | **Window** | **Desktop** |  🖱️   | **🖱️⏫** |  🖲️   |  🖲️⏫  |
+| Feature | **Move** | **Select** | **WordSel** | **Window** | **Desktop** |  🖱️   | **🖱️⏫** |  Numpad  |  🖲️⏫  |
 | :-----: | :------: | :--------: | :---------: | :--------: | :---------: | :--: | :----: | :--: | :--: |
 | Key\Mod |    <kbd>✱</kbd>     |     <kbd>⌘</kbd>      |     <kbd>⌘</kbd><kbd>⌥</kbd>      |     <kbd>⇧</kbd>      |      <kbd>⌃</kbd>      |  <kbd>⌥</kbd>   |   <kbd>⇧</kbd><kbd>⌥</kbd>   |  <kbd>⇧</kbd><kbd>⌃</kbd>  |  <kbd>⇧</kbd><kbd>⌘</kbd>  |
-|    <kbd>H</kbd>    |   Left   | _  |  _  |  _  |  _  | _   |   _   |  _   |  _  |
-|    <kbd>J</kbd>    |   Down   | _  |  _  |  _  |  _  | _   |   _   |  _   |  _  |
-|    <kbd>K</kbd>    |    Up    | _  |  _  |  _  |  _  | _   |   _   |  _   |  _  |
-|    <kbd>L</kbd>    |  Right   | _  |  _  |  _  |  _  | _   |   _   |  _   |  _  |
-|    <kbd>U</kbd>    |   PgUp   | _  |  _  |  _  |  _  | _   |   _   |  _   |  _  |
-|    <kbd>I</kbd>    |   Home   | 5 ups  |  10 ups  |  _  |  _  | _   |   _   |  _   |  _  |
-|    <kbd>O</kbd>    |   End    | 5 downs  |  10 downs  |  _  |  _  | _   |   _   |  _   |  _  |
-|    <kbd>P</kbd>    |   PgDn   | _  |  _  |  _  |  _  | _   |   _   |  _   |  _  |
+|    <kbd>H</kbd>    |   Left   | _        |  _         |  _  |  _  | _   |   _   |  _   |  _  |
+|    <kbd>J</kbd>    |   Down   | _        |  _         |  _  |  _  | _   |   _   |  4   |  _  |
+|    <kbd>K</kbd>    |    Up    | _        |  _         |  _  |  _  | _   |   _   |  5   |  _  |
+|    <kbd>L</kbd>    |  Right   | _        |  _         |  _  |  _  | _   |   _   |  6   |  _  |
+|    <kbd>U</kbd>    |   PgUp   | _        |  _         |  _  |  _  | _   |   _   |  7   |  _  |
+|    <kbd>I</kbd>    |   Home   | 5 ups    |  10 ups    |  _  |  _  | _   |   _   |  8   |  _  |
+|    <kbd>O</kbd>    |   End    | 5 downs  |  10 downs  |  _  |  _  | _   |   _   |  9   |  _  |
+|    <kbd>P</kbd>    |   PgDn   | _        |  _         |  _  |  _  | _   |   _   |  _   |  _  |
 
 
 
@@ -101,6 +101,17 @@ Hold  **<kbd>✱</kbd> Hyper** to enable hyper functionalities. We will assume a
 
 ### Deletion
 
+#### New: 
+<kbd>M</kbd> is used as <kbd>Enter</kbd>
+
+| Key\Mod |        <kbd>⇧</kbd><kbd>⌃</kbd>         |        
+| :-----: | :--------------: | 
+|    <kbd>N</kbd>    | 0 | 
+|    <kbd>M</kbd>    | 1 | 
+|    <kbd>,</kbd>    | 2 |  
+|    <kbd>.</kbd>    | 3 | 
+
+#### Removed
  <kbd>N</kbd> <kbd>M</kbd> <kbd>,</kbd> <kbd>.</kbd>  are used as **Deletor keys**. Right below the navigators for fast access (brown area). 
 
 | Key\Mod |        <kbd>✱</kbd>         |         <kbd>⌘</kbd>          |         <kbd>⌥</kbd>          |

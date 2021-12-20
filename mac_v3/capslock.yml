@@ -197,10 +197,10 @@ rules:
       #   type: basic
       #   from: { key_code: j, modifiers: { mandatory: [ left_shift,left_control,  right_command,right_control,right_shift,right_option ] } }
       #   to: [ { mouse_key: { vertical_wheel: 64 } } ]
-      - description: 'shift + control + j = shift control down'
+      - description: 'shift + control + j = 4'
         type: basic
         from: { key_code: j, modifiers: { mandatory: [ left_shift,left_control,  right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: down_arrow , modifiers: [ left_shift, left_control] } ]
+        to: [ { key_code: '4' } ]
 
       # shift + command: mouse wheel fast
       # - description: 'shift + command + j = mouse wheel down fast'
@@ -283,10 +283,10 @@ rules:
       #   type: basic
       #   from: { key_code: k, modifiers: { mandatory: [ left_shift,left_control,  right_command,right_control,right_shift,right_option ] } }
       #   to: [ { mouse_key: { vertical_wheel: -64 } } ]
-      - description: 'shift + control + k = shift control up'
+      - description: 'shift + control + k = 5'
         type: basic
         from: { key_code: k, modifiers: { mandatory: [ left_shift,left_control,  right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: up_arrow , modifiers: [ left_shift, left_control ] } ]
+        to: [ { key_code: '5' } ]
 
       # shift + command: mouse wheel reverse
       # - description: 'shift + command + k = mouse wheel up fast'
@@ -369,10 +369,10 @@ rules:
       #   type: basic
       #   from: { key_code: l, modifiers: { mandatory: [ left_shift,left_control,  right_command,right_control,right_shift,right_option ] } }
       #   to: [ { mouse_key: { horizontal_wheel: -64 } } ]
-      - description: 'shift + control + l = shift control right'
+      - description: 'shift + control + l = 6'
         type: basic
         from: { key_code: l, modifiers: { mandatory: [ left_shift,left_control,  right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: right_arrow , modifiers: [ left_control, left_shift ] } ]
+        to: [ { key_code: '6' } ]
 
       # shift + command: mouse wheel fast
       # - description: 'shift + command + l = mouse wheel right fast'
@@ -436,6 +436,10 @@ rules:
       #   type: basic
       #   from: { key_code: u, modifiers: { mandatory: [ left_shift,left_control,  right_command,right_control,right_shift,right_option ] } }
       #   to: [ { mouse_key: { horizontal_wheel: -64 } } ]
+      - description: 'shift + control + u = 7'
+        type: basic
+        from: { key_code: u, modifiers: { mandatory: [ left_shift,left_control,  right_command,right_control,right_shift,right_option ] } }
+        to: [ { key_code: '7' } ]
 
       # shift + command: mouse wheel fast
       # - description: 'shift + command + u = mouse wheel left (rev) fast'
@@ -503,6 +507,10 @@ rules:
       #   type: basic
       #   from: { key_code: i, modifiers: { mandatory: [ left_shift,left_control,  right_command,right_control,right_shift,right_option ] } }
       #   to: [ { mouse_key: { vertical_wheel: -64 } } ]
+      - description: 'shift + control + i = 8'
+        type: basic
+        from: { key_code: i, modifiers: { mandatory: [ left_shift,left_control,  right_command,right_control,right_shift,right_option ] } }
+        to: [ { key_code: '8' } ]
 
       # # shift + command: mouse wheel reverse fast
       # - description: 'shift + command + i = mouse wheel down (rev) fast'
@@ -565,6 +573,10 @@ rules:
       #   type: basic
       #   from: { key_code: o, modifiers: { mandatory: [ left_shift,left_control,  right_command,right_control,right_shift,right_option ] } }
       #   to: [ { mouse_key: { vertical_wheel: 64 } } ]
+      - description: 'shift + control + o = 9'
+        type: basic
+        from: { key_code: o, modifiers: { mandatory: [ left_shift,left_control,  right_command,right_control,right_shift,right_option ] } }
+        to: [ { key_code: '9' } ]
 
       # # shift + command: mouse wheel reverse
       # - description: 'shift + command + o = mouse wheel up (rev) fast'
@@ -889,6 +901,27 @@ rules:
         type: basic
         from: { key_code: m, modifiers: { mandatory: [  right_command,right_control,right_shift,right_option ] } }
         to: [ { key_code: return_or_enter} ]
+
+      # Numpad
+      - description: 'shift + control + n = 0'
+        type: basic
+        from: { key_code: n, modifiers: { mandatory: [ left_shift,left_control,  right_command,right_control,right_shift,right_option ] } }
+        to: [ { key_code: '0' } ]
+
+      - description: 'shift + control + m = 1'
+        type: basic
+        from: { key_code: m, modifiers: { mandatory: [ left_shift,left_control,  right_command,right_control,right_shift,right_option ] } }
+        to: [ { key_code: '1' } ]
+
+      - description: 'shift + control + comma = 2'
+        type: basic
+        from: { key_code: comma, modifiers: { mandatory: [ left_shift,left_control,  right_command,right_control,right_shift,right_option ] } }
+        to: [ { key_code: '2' } ]
+
+      - description: 'shift + control + period = 3'
+        type: basic
+        from: { key_code: period, modifiers: { mandatory: [ left_shift,left_control,  right_command,right_control,right_shift,right_option ] } }
+        to: [ { key_code: '3' } ]
 
 
   ################################################################
