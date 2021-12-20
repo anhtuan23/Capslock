@@ -51,22 +51,34 @@ rules:
       # ( h ) + ( ⌘⌥⇧⌃ )  -> ( left )                            #
       #==========================================================#
       # command: selection
-      - description: 'command + h = shift + left'
+      # - description: 'command + h = shift + left'
+      #   type: basic
+      #   from: { key_code: h, modifiers: { mandatory: [ left_command, right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { key_code: left_arrow , modifiers: [ left_shift ] } ]
+      - description: 'command + h = command + left'
         type: basic
         from: { key_code: h, modifiers: { mandatory: [ left_command, right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: left_arrow , modifiers: [ left_shift ] } ]
+        to: [ { key_code: left_arrow , modifiers: [ left_command ] } ]
 
       # option + command: word selection
-      - description: 'option + command + h = option + shift + left (select word ahead)'
+      # - description: 'option + command + h = option + shift + left (select word ahead)'
+      #   type: basic
+      #   from: { key_code: h, modifiers: { mandatory: [ left_option,left_command, right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { key_code: left_arrow , modifiers: [ left_option, left_shift ] } ]
+      - description: 'option + command + h = option + command + left'
         type: basic
         from: { key_code: h, modifiers: { mandatory: [ left_option,left_command, right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: left_arrow , modifiers: [ left_option, left_shift ] } ]
+        to: [ { key_code: left_arrow , modifiers: [ left_option, left_command ] } ]
 
       # shift: tab/win management
-      - description: 'shift + h = ctrl + shift + tab (prev tab)'
+      # - description: 'shift + h = ctrl + shift + tab (prev tab)'
+      #   type: basic
+      #   from: { key_code: h, modifiers: { mandatory: [ left_shift ,right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { key_code: tab , modifiers: [ left_control , left_shift ] } ]
+      - description: 'shift + h = shift + left'
         type: basic
         from: { key_code: h, modifiers: { mandatory: [ left_shift ,right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: tab , modifiers: [ left_control , left_shift ] } ]
+        to: [ { key_code: left_arrow , modifiers: [ left_shift ] } ]
 
       # control: desktop management
       - description: 'control + h = ctrl + left (prev desktop)'
@@ -75,28 +87,44 @@ rules:
         to: [ { key_code: left_arrow , modifiers: [ left_control ] } ]
 
       # option: mouse move
-      - description: 'option + h = mouse left'
+      # - description: 'option + h = mouse left'
+      #   type: basic
+      #   from: { key_code: h, modifiers: { mandatory: [ left_option, right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { mouse_key: { x: -1600 } } ]
+      - description: 'option + h = option left'
         type: basic
         from: { key_code: h, modifiers: { mandatory: [ left_option, right_command,right_control,right_shift,right_option ] } }
-        to: [ { mouse_key: { x: -1600 } } ]
+        to: [ { key_code: left_arrow , modifiers: [ left_option ] } ]
 
       # shift + option: fast mouse move
-      - description: 'shift + option + h = mouse left fast'
+      # - description: 'shift + option + h = mouse left fast'
+      #   type: basic
+      #   from: { key_code: h, modifiers: { mandatory: [ left_shift,left_option,  right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { mouse_key: { x: -3200 } } ]
+      - description: 'shift + option + h = shift + option + left'
         type: basic
         from: { key_code: h, modifiers: { mandatory: [ left_shift,left_option,  right_command,right_control,right_shift,right_option ] } }
-        to: [ { mouse_key: { x: -3200 } } ]
+        to: [ { key_code: left_arrow , modifiers: [ left_option, left_shift ] } ]
 
       # shift + control: mouse wheel
-      - description: 'shift + control + h = mouse wheel left'
+      # - description: 'shift + control + h = mouse wheel left'
+      #   type: basic
+      #   from: { key_code: h, modifiers: { mandatory: [ left_shift,left_control,  right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { mouse_key: { horizontal_wheel: 64 } } ]
+      - description: 'shift + control + h = shift + control + left'
         type: basic
         from: { key_code: h, modifiers: { mandatory: [ left_shift,left_control,  right_command,right_control,right_shift,right_option ] } }
-        to: [ { mouse_key: { horizontal_wheel: 64 } } ]
+        to: [ { key_code: left_arrow , modifiers: [ left_control, left_shift ] } ]
 
       # shift + command: mouse wheel reverse
-      - description: 'shift + command + h = mouse wheel left fast'
+      # - description: 'shift + command + h = mouse wheel left fast'
+      #   type: basic
+      #   from: { key_code: h, modifiers: { mandatory: [ left_shift,left_command,  right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { mouse_key: { horizontal_wheel: 128 } } ]
+      - description: 'shift + command + h = shift + command + left'
         type: basic
         from: { key_code: h, modifiers: { mandatory: [ left_shift,left_command,  right_command,right_control,right_shift,right_option ] } }
-        to: [ { mouse_key: { horizontal_wheel: 128 } } ]
+        to: [ { key_code: left_arrow , modifiers: [ left_command, left_shift ] } ]
 
       # normal: cursor move
       - description: ' h = left'
@@ -109,22 +137,34 @@ rules:
       # ( j ) + ( ⌘⌥⇧⌃ )  -> ( down )                            #
       #==========================================================#
       # command: selection
-      - description: 'command + j = shift + down'
+      # - description: 'command + j = shift + down'
+      #   type: basic
+      #   from: { key_code: j, modifiers: { mandatory: [ left_command, right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { key_code: down_arrow , modifiers: [ left_shift ] } ]
+      - description: 'command + j = command down'
         type: basic
         from: { key_code: j, modifiers: { mandatory: [ left_command, right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: down_arrow , modifiers: [ left_shift ] } ]
+        to: [ { key_code: down_arrow , modifiers: [ left_command ] } ]
 
       # option + command: line selection
-      - description: 'option + command + j = option + shift + down (select para ahead)'
+      # - description: 'option + command + j = option + shift + down (select para ahead)'
+      #   type: basic
+      #   from: { key_code: j, modifiers: { mandatory: [ left_option,left_command, right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { key_code: down_arrow , modifiers: [ left_shift ] }, { key_code: down_arrow , modifiers: [ left_shift ] },{ key_code: down_arrow , modifiers: [ left_shift ] } ]
+      - description: 'option + command + j = option command down'
         type: basic
         from: { key_code: j, modifiers: { mandatory: [ left_option,left_command, right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: down_arrow , modifiers: [ left_shift ] }, { key_code: down_arrow , modifiers: [ left_shift ] },{ key_code: down_arrow , modifiers: [ left_shift ] } ]
+        to: [ { key_code: down_arrow , modifiers: [ left_shift ] }, { key_code: down_arrow , modifiers: [ left_shift ] },{ key_code: down_arrow , modifiers: [ left_option, left_command ] } ]
 
       # shift: tab/win management
-      - description: 'shift + j = command + tab (next application)'
+      # - description: 'shift + j = command + tab (next application)'
+      #   type: basic
+      #   from: { key_code: j, modifiers: { mandatory: [ left_shift ,right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { key_code: tab , modifiers: [ left_command ] } ]
+      - description: 'shift + j = shift + down'
         type: basic
         from: { key_code: j, modifiers: { mandatory: [ left_shift ,right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: tab , modifiers: [ left_command ] } ]
+        to: [ { key_code: down_arrow , modifiers: [ left_shift ] } ]
 
       # control: desktop management
       - description: 'control + j = ctrl + down (focus application)'
@@ -133,28 +173,44 @@ rules:
         to: [ { key_code: down_arrow , modifiers: [ left_control ] } ]
 
       # option: mouse move
-      - description: 'option + j = mouse down'
+      # - description: 'option + j = mouse down'
+      #   type: basic
+      #   from: { key_code: j, modifiers: { mandatory: [ left_option, right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { mouse_key: { y: 1600 } } ]
+      - description: 'option + j = option down'
         type: basic
         from: { key_code: j, modifiers: { mandatory: [ left_option, right_command,right_control,right_shift,right_option ] } }
-        to: [ { mouse_key: { y: 1600 } } ]
+        to: [ { key_code: down_arrow , modifiers: [ left_option ] } ]
 
       # shift + option: mouse move fast
-      - description: 'shift + option + j = mouse down fast'
+      # - description: 'shift + option + j = mouse down fast'
+      #   type: basic
+      #   from: { key_code: j, modifiers: { mandatory: [ left_shift,left_option,  right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { mouse_key: { y: 3200 } } ]
+      - description: 'shift + option + j = shift option down'
         type: basic
         from: { key_code: j, modifiers: { mandatory: [ left_shift,left_option,  right_command,right_control,right_shift,right_option ] } }
-        to: [ { mouse_key: { y: 3200 } } ]
+        to: [ { key_code: down_arrow , modifiers: [ left_shift, left_option] } ]
 
       # shift + control: mouse wheel
-      - description: 'shift + control + j = mouse wheel down'
+      # - description: 'shift + control + j = mouse wheel down'
+      #   type: basic
+      #   from: { key_code: j, modifiers: { mandatory: [ left_shift,left_control,  right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { mouse_key: { vertical_wheel: 64 } } ]
+      - description: 'shift + control + j = shift control down'
         type: basic
         from: { key_code: j, modifiers: { mandatory: [ left_shift,left_control,  right_command,right_control,right_shift,right_option ] } }
-        to: [ { mouse_key: { vertical_wheel: 64 } } ]
+        to: [ { key_code: down_arrow , modifiers: [ left_shift, left_control] } ]
 
       # shift + command: mouse wheel fast
-      - description: 'shift + command + j = mouse wheel down fast'
+      # - description: 'shift + command + j = mouse wheel down fast'
+      #   type: basic
+      #   from: { key_code: j, modifiers: { mandatory: [ left_shift,left_command,  right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { mouse_key: { vertical_wheel: 128 } } ]
+      - description: 'shift + command + j = shift command down'
         type: basic
         from: { key_code: j, modifiers: { mandatory: [ left_shift,left_command,  right_command,right_control,right_shift,right_option ] } }
-        to: [ { mouse_key: { vertical_wheel: 128 } } ]
+        to: [ { key_code: down_arrow , modifiers: [ left_command, left_shift ] } ]
 
       # normal: cursor move
       - description: ' j = down'
@@ -167,22 +223,34 @@ rules:
       # ( k ) + ( ⌘⌥⇧⌃ )  -> ( up )                            #
       #==========================================================#
       # command: selection
-      - description: 'command + k = shift + up'
+      # - description: 'command + k = shift + up'
+      #   type: basic
+      #   from: { key_code: k, modifiers: { mandatory: [ left_command, right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { key_code: up_arrow , modifiers: [ left_shift ] } ]
+      - description: 'command + k = command up'
         type: basic
         from: { key_code: k, modifiers: { mandatory: [ left_command, right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: up_arrow , modifiers: [ left_shift ] } ]
+        to: [ { key_code: up_arrow , modifiers: [ left_command ] } ]
 
       # option + command: line selection
-      - description: 'option + command + k = option + shift + up (select line above)'
+      # - description: 'option + command + k = option + shift + up (select line above)'
+      #   type: basic
+      #   from: { key_code: k, modifiers: { mandatory: [ left_option,left_command, right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { key_code: up_arrow , modifiers: [ left_shift ] }, { key_code: up_arrow , modifiers: [ left_shift ] },{ key_code: up_arrow , modifiers: [ left_shift ] } ]
+      - description: 'option + command + k = option command up'
         type: basic
         from: { key_code: k, modifiers: { mandatory: [ left_option,left_command, right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: up_arrow , modifiers: [ left_shift ] }, { key_code: up_arrow , modifiers: [ left_shift ] },{ key_code: up_arrow , modifiers: [ left_shift ] } ]
+        to: [ { key_code: up_arrow , modifiers: [ left_option, left_command] } ]
 
       # shift: tab/win management
-      - description: 'shift + k = command + tab (prev application)'
+      # - description: 'shift + k = command + tab (prev application)'
+      #   type: basic
+      #   from: { key_code: k, modifiers: { mandatory: [ left_shift ,right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { key_code: tab , modifiers: [ left_command, left_shift ] } ]
+      - description: 'shift + k = shift up'
         type: basic
         from: { key_code: k, modifiers: { mandatory: [ left_shift ,right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: tab , modifiers: [ left_command, left_shift ] } ]
+        to: [ { key_code: up_arrow , modifiers: [ left_shift ] } ]
 
       # control: desktop management
       - description: 'control + k = ctrl + up (expose all)'
@@ -191,28 +259,44 @@ rules:
         to: [ { key_code: up_arrow , modifiers: [ left_control ] } ]
 
       # option: mouse move
-      - description: 'option + k = mouse up'
+      # - description: 'option + k = mouse up'
+      #   type: basic
+      #   from: { key_code: k, modifiers: { mandatory: [ left_option, right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { mouse_key: { y: -1600 } } ]
+      - description: 'option + k = option up'
         type: basic
         from: { key_code: k, modifiers: { mandatory: [ left_option, right_command,right_control,right_shift,right_option ] } }
-        to: [ { mouse_key: { y: -1600 } } ]
+        to: [ { key_code: up_arrow , modifiers: [ left_option] } ]
 
       # shift + option: mouse move fast
-      - description: 'shift + option + k = mouse up fast'
+      # - description: 'shift + option + k = mouse up fast'
+      #   type: basic
+      #   from: { key_code: k, modifiers: { mandatory: [ left_shift,left_option,  right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { mouse_key: { y: -3200 } } ]
+      - description: 'shift + option + k = shift option up'
         type: basic
         from: { key_code: k, modifiers: { mandatory: [ left_shift,left_option,  right_command,right_control,right_shift,right_option ] } }
-        to: [ { mouse_key: { y: -3200 } } ]
+        to: [ { key_code: up_arrow , modifiers: [ left_shift, left_option] } ]
 
       # shift + control: mouse wheel
-      - description: 'shift + control + k = mouse wheel up'
+      # - description: 'shift + control + k = mouse wheel up'
+      #   type: basic
+      #   from: { key_code: k, modifiers: { mandatory: [ left_shift,left_control,  right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { mouse_key: { vertical_wheel: -64 } } ]
+      - description: 'shift + control + k = shift control up'
         type: basic
         from: { key_code: k, modifiers: { mandatory: [ left_shift,left_control,  right_command,right_control,right_shift,right_option ] } }
-        to: [ { mouse_key: { vertical_wheel: -64 } } ]
+        to: [ { key_code: up_arrow , modifiers: [ left_shift, left_control ] } ]
 
       # shift + command: mouse wheel reverse
-      - description: 'shift + command + k = mouse wheel up fast'
+      # - description: 'shift + command + k = mouse wheel up fast'
+      #   type: basic
+      #   from: { key_code: k, modifiers: { mandatory: [ left_shift,left_command,  right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { mouse_key: { vertical_wheel: -128 } } ]
+      - description: 'shift + command + k = shift command up'
         type: basic
         from: { key_code: k, modifiers: { mandatory: [ left_shift,left_command,  right_command,right_control,right_shift,right_option ] } }
-        to: [ { mouse_key: { vertical_wheel: -128 } } ]
+        to: [ { key_code: up_arrow , modifiers: [ left_shift, left_command ] } ]
 
       # normal: cursor move
       - description: ' k = up'
@@ -225,22 +309,34 @@ rules:
       # ( l ) + ( ⌘⌥⇧⌃ )  -> ( right )                            #
       #==========================================================#
       # command: selection
-      - description: 'command + l = shift + right'
+      # - description: 'command + l = shift + right'
+      #   type: basic
+      #   from: { key_code: l, modifiers: { mandatory: [ left_command, right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { key_code: right_arrow , modifiers: [ left_shift ] } ]
+      - description: 'command + l = command right'
         type: basic
         from: { key_code: l, modifiers: { mandatory: [ left_command, right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: right_arrow , modifiers: [ left_shift ] } ]
+        to: [ { key_code: right_arrow , modifiers: [ left_command ] } ]
 
       # option + command: word selection
-      - description: 'option + command + l = option + shift + right (select word after)'
+      # - description: 'option + command + l = option + shift + right (select word after)'
+      #   type: basic
+      #   from: { key_code: l, modifiers: { mandatory: [ left_option,left_command, right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { key_code: right_arrow , modifiers: [ left_shift,left_option ] } ]
+      - description: 'option + command + l = option command right'
         type: basic
         from: { key_code: l, modifiers: { mandatory: [ left_option,left_command, right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: right_arrow , modifiers: [ left_shift,left_option ] } ]
+        to: [ { key_code: right_arrow , modifiers: [ left_option, left_command ] } ]
 
       # shift: tab/win management
-      - description: 'shift + l = command + tab (next tab)'
+      # - description: 'shift + l = command + tab (next tab)'
+      #   type: basic
+      #   from: { key_code: l, modifiers: { mandatory: [ left_shift ,right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { key_code: tab , modifiers: [ left_control ] } ]
+      - description: 'shift + l = shift right'
         type: basic
         from: { key_code: l, modifiers: { mandatory: [ left_shift ,right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: tab , modifiers: [ left_control ] } ]
+        to: [ { key_code: right_arrow , modifiers: [ left_shift ] } ]
 
       # control: desktop management
       - description: 'control + l = ctrl + right (next desktop)'
@@ -249,28 +345,44 @@ rules:
         to: [ { key_code: right_arrow , modifiers: [ left_control ] } ]
 
       # option: mouse move
-      - description: 'option + l = mouse move right'
+      # - description: 'option + l = mouse move right'
+      #   type: basic
+      #   from: { key_code: l, modifiers: { mandatory: [ left_option, right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { mouse_key: { x: 1600 } } ]
+      - description: 'option + l = option right'
         type: basic
         from: { key_code: l, modifiers: { mandatory: [ left_option, right_command,right_control,right_shift,right_option ] } }
-        to: [ { mouse_key: { x: 1600 } } ]
+        to: [ { key_code: right_arrow , modifiers: [ left_option] } ]
 
       # shift + option: mouse move fast
-      - description: 'shift + option + l = mouse move right fast'
+      # - description: 'shift + option + l = mouse move right fast'
+      #   type: basic
+      #   from: { key_code: l, modifiers: { mandatory: [ left_shift,left_option,  right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { mouse_key: { x: 3200 } } ]
+      - description: 'shift + option + l = shift option right'
         type: basic
         from: { key_code: l, modifiers: { mandatory: [ left_shift,left_option,  right_command,right_control,right_shift,right_option ] } }
-        to: [ { mouse_key: { x: 3200 } } ]
+        to: [ { key_code: right_arrow , modifiers: [ left_shift, left_option ] } ]
 
       # shift + control: mouse wheel
-      - description: 'shift + control + l = mouse wheel right'
+      # - description: 'shift + control + l = mouse wheel right'
+      #   type: basic
+      #   from: { key_code: l, modifiers: { mandatory: [ left_shift,left_control,  right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { mouse_key: { horizontal_wheel: -64 } } ]
+      - description: 'shift + control + l = shift control right'
         type: basic
         from: { key_code: l, modifiers: { mandatory: [ left_shift,left_control,  right_command,right_control,right_shift,right_option ] } }
-        to: [ { mouse_key: { horizontal_wheel: -64 } } ]
+        to: [ { key_code: right_arrow , modifiers: [ left_control, left_shift ] } ]
 
       # shift + command: mouse wheel fast
-      - description: 'shift + command + l = mouse wheel right fast'
+      # - description: 'shift + command + l = mouse wheel right fast'
+      #   type: basic
+      #   from: { key_code: l, modifiers: { mandatory: [ left_shift,left_command,  right_command,right_control,right_shift,right_option ] } }
+      #   to: [ { mouse_key: { horizontal_wheel: -128 } } ]
+      - description: 'shift + command + l = shift command right'
         type: basic
         from: { key_code: l, modifiers: { mandatory: [ left_shift,left_command,  right_command,right_control,right_shift,right_option ] } }
-        to: [ { mouse_key: { horizontal_wheel: -128 } } ]
+        to: [ { key_code: right_arrow , modifiers: [ left_shift, left_command] } ]
 
       # normal: cursor move
       - description: ' l = right'
