@@ -902,6 +902,11 @@ rules:
         from: { key_code: m, modifiers: { mandatory: [  right_command,right_control,right_shift,right_option ] } }
         to: [ { key_code: return_or_enter} ]
 
+      - description: 'command + m = command + enter'
+        type: basic
+        from: { key_code: m, modifiers: { mandatory: [ left_command, right_command,right_control,right_shift,right_option ] } }
+        to: [ { key_code: return_or_enter, modifiers: [ left_command ] } ]
+
       # Numpad
       - description: 'shift + control + n = 0'
         type: basic
