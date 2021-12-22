@@ -909,7 +909,7 @@ rules:
 
       - description: 'command + shift + m = command + shift + enter'
         type: basic
-        from: { key_code: m, modifiers: { mandatory: [ left_command, right_command,right_control,right_shift,right_option ] } }
+        from: { key_code: m, modifiers: { mandatory: [ left_command, left_shift, right_command,right_control,right_shift,right_option ] } }
         to: [ { key_code: return_or_enter, modifiers: [ left_command, left_shift ] } ]
 
       # Numpad
