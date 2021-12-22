@@ -106,6 +106,8 @@ Hold  **<kbd>✱</kbd> Hyper** to enable hyper functionalities. We will assume a
 
 <kbd>⌘</kbd><kbd>M</kbd> is used as <kbd>⌘</kbd><kbd>Enter</kbd>
 
+<kbd>⌘</kbd><kbd>⇧</kbd><kbd>M</kbd> is used as <kbd>⌘</kbd><kbd>⇧</kbd><kbd>Enter</kbd>
+
 | Key\Mod |        <kbd>⇧</kbd><kbd>⌃</kbd>         |        
 | :-----: | :--------------: | 
 |    <kbd>N</kbd>    | 0 | 
