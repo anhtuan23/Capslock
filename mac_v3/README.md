@@ -170,14 +170,14 @@ Hold  **<kbd>✱</kbd> Hyper** to enable hyper functionalities. We will assume a
 * <kbd>E</kbd> <kbd>R</kbd> <kbd>T</kbd> <kbd>Y</kbd> <kbd>F</kbd> <kbd>G</kbd> are used as application shortcuts. (yellow area)
 * Popular apps and dev tools are registed to 3 default planes: <kbd>✱</kbd>/<kbd>⌘</kbd>/<kbd>⌥</kbd>. Assign these shortcuts according to your own needs.
 
-| Key\Mod |         <kbd>✱</kbd>          |     <kbd>⌘</kbd>     |      <kbd>⌥</kbd>      |
-| :-----: | :----------------: | :-------: | :---------: |
-|    <kbd>E</kbd>    |       Finder       |  Finder Downloads   |    Finder Home     |
-|    <kbd>R</kbd>    |       iTerm2       |  Finder projects  |  Terminal   |
-|    <kbd>T</kbd>    | Visual Studio Code |  Screen Time   |    Storage Management     |
-|    <kbd>Y</kbd>    |        Feedly        | Notion ReadDict | Twitter |
-|    <kbd>F</kbd>    |      Chrome      |   YouTube Subs    | VnDirect  |
-|    <kbd>G</kbd>    |   Alfred 4    |  System Preferences   |  Safari   |
+| Key\Mod            |    <kbd>✱</kbd>    |     <kbd>⌘</kbd>      |   <kbd>⌥</kbd>     |
+| :----------------: | :----------------: | :-------------------: | :----------------: |
+|    <kbd>E</kbd>    |       Finder       |  Finder Downloads     |    Finder Home     |
+|    <kbd>R</kbd>    |       iTerm2       |  Finder projects      |  Terminal          |
+|    <kbd>T</kbd>    | Visual Studio Code |  Screen Time          | Storage Management |
+|    <kbd>Y</kbd>    |        Feedly      | Notion ReadDict       | Twitter            |
+|    <kbd>F</kbd>    |      Chrome        |   YouTube Subs        | VnDirect           |
+|    <kbd>G</kbd>    |   Alfred 4         |  Display Preferences  |  Safari            |
 
 
 
