@@ -2079,6 +2079,173 @@ rules:
         from: { key_code: page_down, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
         to: [ { key_code: volume_decrement, modifiers: [ left_shift, left_option ] } ]
 
+  ################################################################
+  #                      Option symbol remap                     #
+  ################################################################
+  - description: Option symbol remap
+    manipulators:
+
+
+      #==========================================================#
+      # Numpad                                                   #
+      #==========================================================#
+      - description: 'option + n = 0'
+        type: basic
+        from: { key_code: n, modifiers: { mandatory: [ option ] } }
+        to: [ { key_code: '0' } ]
+
+      - description: 'option + m = 1'
+        type: basic
+        from: { key_code: m, modifiers: { mandatory: [ option ] } }
+        to: [ { key_code: '1' } ]
+
+      - description: 'option + , = 2'
+        type: basic
+        from: { key_code: comma, modifiers: { mandatory: [ option ] } }
+        to: [ { key_code: '2' } ]
+
+      - description: 'option + . = 3'
+        type: basic
+        from: { key_code: period, modifiers: { mandatory: [ option ] } }
+        to: [ { key_code: '3' } ]
+
+      - description: 'option + j = 4'
+        type: basic
+        from: { key_code: j, modifiers: { mandatory: [ option ] } }
+        to: [ { key_code: '4' } ]
+
+      - description: 'option + k = 5'
+        type: basic
+        from: { key_code: k, modifiers: { mandatory: [ option ] } }
+        to: [ { key_code: '5' } ]
+
+      - description: 'option + l = 6'
+        type: basic
+        from: { key_code: l, modifiers: { mandatory: [ option ] } }
+        to: [ { key_code: '6' } ]
+
+      - description: 'option + u = 7'
+        type: basic
+        from: { key_code: u, modifiers: { mandatory: [ option ] } }
+        to: [ { key_code: '7' } ]
+
+      - description: 'option + i = 8'
+        type: basic
+        from: { key_code: i, modifiers: { mandatory: [ option ] } }
+        to: [ { key_code: '8' } ]
+
+      - description: 'option + o = 9'
+        type: basic
+        from: { key_code: o, modifiers: { mandatory: [ option ] } }
+        to: [ { key_code: '9' } ]
+
+      #==========================================================#
+      # Empty                                                    #
+      #==========================================================#
+      - description: 'option + q = q'
+        type: basic
+        from: { key_code: q, modifiers: { mandatory: [ option ] } }
+        to: [ { key_code: 'q' } ]
+
+      - description: 'option + w = w'
+        type: basic
+        from: { key_code: w, modifiers: { mandatory: [ option ] } }
+        to: [ { key_code: 'w' } ]
+
+      - description: 'option + w = w'
+        type: basic
+        from: { key_code: w, modifiers: { mandatory: [ option ] } }
+        to: [ { key_code: 'w' } ]
+
+      - description: 'option + e = e'
+        type: basic
+        from: { key_code: e, modifiers: { mandatory: [ option ] } }
+        to: [ { key_code: 'e' } ]
+
+      - description: 'option + r = r'
+        type: basic
+        from: { key_code: r, modifiers: { mandatory: [ option ] } }
+        to: [ { key_code: 'r' } ]
+
+      - description: 'option + t = t'
+        type: basic
+        from: { key_code: t, modifiers: { mandatory: [ option ] } }
+        to: [ { key_code: 't' } ]
+
+      - description: 'option + y = y'
+        type: basic
+        from: { key_code: y, modifiers: { mandatory: [ option ] } }
+        to: [ { key_code: 'y' } ]
+
+      - description: 'option + p = p'
+        type: basic
+        from: { key_code: p, modifiers: { mandatory: [ option ] } }
+        to: [ { key_code: 'p' } ]
+
+      - description: 'option + a = a'
+        type: basic
+        from: { key_code: a, modifiers: { mandatory: [ option ] } }
+        to: [ { key_code: 'a' } ]
+
+      - description: 'option + s = s'
+        type: basic
+        from: { key_code: s, modifiers: { mandatory: [ option ] } }
+        to: [ { key_code: 's' } ]
+
+      - description: 'option + d = d'
+        type: basic
+        from: { key_code: d, modifiers: { mandatory: [ option ] } }
+        to: [ { key_code: 'd' } ]
+
+      - description: 'option + f = f'
+        type: basic
+        from: { key_code: f, modifiers: { mandatory: [ option ] } }
+        to: [ { key_code: 'f' } ]
+
+      - description: 'option + g = g'
+        type: basic
+        from: { key_code: g, modifiers: { mandatory: [ option ] } }
+        to: [ { key_code: 'g' } ]
+
+      - description: 'option + h = h'
+        type: basic
+        from: { key_code: h, modifiers: { mandatory: [ option ] } }
+        to: [ { key_code: 'h' } ]
+
+      - description: 'option + z = z'
+        type: basic
+        from: { key_code: z, modifiers: { mandatory: [ option ] } }
+        to: [ { key_code: 'z' } ]
+
+      - description: 'option + x = x'
+        type: basic
+        from: { key_code: x, modifiers: { mandatory: [ option ] } }
+        to: [ { key_code: 'x' } ]
+
+      - description: 'option + c = c'
+        type: basic
+        from: { key_code: c, modifiers: { mandatory: [ option ] } }
+        to: [ { key_code: 'c' } ]
+
+      - description: 'option + v = v'
+        type: basic
+        from: { key_code: v, modifiers: { mandatory: [ option ] } }
+        to: [ { key_code: 'v' } ]
+
+      - description: 'option + b = b'
+        type: basic
+        from: { key_code: b, modifiers: { mandatory: [ option ] } }
+        to: [ { key_code: 'b' } ]
+
+      - description: 'option + w = w'
+        type: basic
+        from: { key_code: w, modifiers: { mandatory: [ option ] } }
+        to: [ { key_code: 'w' } ]
+
+      - description: 'option + w = w'
+        type: basic
+        from: { key_code: w, modifiers: { mandatory: [ option ] } }
+        to: [ { key_code: 'w' } ]
 
 
 ...
