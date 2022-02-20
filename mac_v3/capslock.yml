@@ -448,10 +448,10 @@ rules:
         # to: [ { mouse_key: { horizontal_wheel: -128 } } ]
 
       # normal: cursor move
-      - description: ' u = page_up'
+      - description: ' u = enter'
         type: basic
         from: { key_code: u, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
-        to: [ { key_code: page_up } ]
+        to: [ { key_code: return_or_enter } ]
 
 
 

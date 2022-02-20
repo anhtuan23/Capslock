@@ -78,7 +78,7 @@ Hold  **<kbd>✱</kbd> Hyper** to enable hyper functionalities. We will assume a
 |    <kbd>J</kbd>    |   Down   | _        |  _         |  _  |  _  | _   |   _   |  4   |  _  |
 |    <kbd>K</kbd>    |    Up    | _        |  _         |  _  |  _  | _   |   _   |  5   |  _  |
 |    <kbd>L</kbd>    |  Right   | _        |  _         |  _  |  _  | _   |   _   |  6   |  _  |
-|    <kbd>U</kbd>    |   PgUp   | _        |  _         |  _  |  _  | _   |   _   |  7   |  _  |
+|    <kbd>U</kbd>    |   Enter  | _        |  _         |  _  |  _  | _   |   _   |  7   |  _  |
 |    <kbd>I</kbd>    |   Home   | 5 ups    |  10 ups    |  _  |  _  | _   |   _   |  8   |  _  |
 |    <kbd>O</kbd>    |   End    | 5 downs  |  10 downs  |  _  |  _  | _   |   _   |  9   |  _  |
 |    <kbd>P</kbd>    |   PgDn   | _        |  _         |  _  |  _  | _   |   _   |  _   |  _  |
