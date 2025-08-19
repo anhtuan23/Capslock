@@ -16,7 +16,7 @@
       "description": "CapsLock to Hyper",
       "manipulators": [
         {
-          "description": "capslock = esc(click) | hyper(hold)",
+          "description": "capslock = hyper(hold)",
           "type": "basic",
           "from": {
             "key_code": "caps_lock",
@@ -34,11 +34,6 @@
                 "right_control",
                 "right_option"
               ]
-            }
-          ],
-          "to_if_alone": [
-            {
-              "key_code": "escape"
             }
           ]
         }
