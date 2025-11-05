@@ -966,6 +966,27 @@
           ]
         },
         {
+          "description": "f6 = lock screen",
+          "type": "basic",
+          "from": {
+            "key_code": "f6",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "q",
+              "modifiers": [
+                "left_command",
+                "left_control"
+              ]
+            }
+          ]
+        },
+        {
           "description": "command + a = expose all",
           "type": "basic",
           "from": {
