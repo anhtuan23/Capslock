@@ -262,6 +262,11 @@ rules:
         from: { key_code: spacebar, modifiers: { mandatory: [ right_command,right_control,right_shift,right_option ] } }
         to: [ { key_code: hyphen , modifiers: [ left_shift ] } ]
 
+      - description: 'f3 = shift + enter'
+        type: basic
+        from: { key_code: f3, modifiers: { optional: [ any ] } }
+        to: [ { key_code: return_or_enter , modifiers: [ left_shift ] } ]
+
       - description: 'f6 = lock screen'
         type: basic
         from: { key_code: f6, modifiers: { optional: [ any ] } }

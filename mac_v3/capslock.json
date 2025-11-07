@@ -966,6 +966,26 @@
           ]
         },
         {
+          "description": "f3 = shift + enter",
+          "type": "basic",
+          "from": {
+            "key_code": "f3",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "return_or_enter",
+              "modifiers": [
+                "left_shift"
+              ]
+            }
+          ]
+        },
+        {
           "description": "f6 = lock screen",
           "type": "basic",
           "from": {
