@@ -24,6 +24,22 @@ rules:
         from: { key_code: caps_lock, modifiers: { optional: [ any ] } }
         to: [ { key_code: right_shift, modifiers: [ right_command,right_control,right_option ] } ]
 
+  ################################################################
+  #                    Mouse Button Remapping                    #
+  ################################################################
+  - description: Mouse Button Remapping
+    manipulators:
+
+      - description: 'button4 = option + 1'
+        type: basic
+        from: { pointing_button: button4 }
+        to: [ { key_code: '1', modifiers: [ left_option ] } ]
+
+      - description: 'button5 = command + w'
+        type: basic
+        from: { pointing_button: button5 }
+        to: [ { key_code: w, modifiers: [ left_command ] } ]
+
 
   ################################################################
   #                       Hyper Navigation                       #
